@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>搜索结果页</title>
+	<link rel="stylesheet" href="../css/search result.css">
+</head>
+<body>
+	<div class="top">
+		<div class="top_nav clearfix">
+			<ul class="top_list">
+				<li><img id="live" src="../images/zhao-images/live.png"  alt=""></li>
+				<li class="newCity">北京</li>
+				<li>切换</li>
+			</ul>
+			<div class="top_city">
+				<div class="allcity  clearfix">
+					<span>全国:</span>
+					<ul id="citys">
+						<li>北京</li>
+						<li>天津</li>
+						<li>河北</li>
+						<li>山西</li>
+						<li>内蒙古</li>
+						<li>辽宁</li>
+						<li>吉林</li>
+						<li>黑龙江</li>
+						<li>上海</li>
+						<li>江苏</li>
+						<li>浙江</li>
+						<li>安徽</li>
+						<li>福建</li>
+						<li>江西</li>
+						<li>山东</li>
+						<li>河南</li>
+						<li>湖北</li>
+						<li>湖南</li>
+						<li>广东</li>
+						<li>广西</li>
+						<li>海南</li>
+						<li>重庆</li>
+						<li>四川</li>
+						<li>贵州</li>
+						<li>云南</li>
+						<li>西藏</li>
+						<li>陕西</li>
+						<li>甘肃</li>
+						<li>青海</li>
+						<li>宁夏</li>
+						<li>新疆</li>
+					</ul>
+				</div>
+			</div>			
+			<ul class="phone ">
+				<li><img id="phone1" src="../images/zhao-images/phone.png" alt=""></li>
+				<li>下载手机APP</li>
+			</ul>
+			<ul class="login">
+				<li><img id="qq" src="../images/zhao-images/qq.gif" alt=""></li>
+				<li><img id="sina" src="../images/zhao-images/sina.png" alt=""></li>
+				<li>登录</li>
+				<li id="shu"> | </li>
+				<li>注册</li>
+			</ul>
+		</div>
+	</div>
+	<div class="header">
+		<div class="header_in clearfix">
+			<img src="../images/zhao-images/logo.jpg" id="logo" alt="">
+		    <ul id="nav">
+				<li>首页</li>
+				<li>目的地</li>
+				<li>线路</li>
+				<li>订制</li>
+				<li>自驾团</li>
+				<li>摄影</li>
+				<li>互动</li>
+				<li>精选</li>
+				<li>预定</li>
+		    </ul>		
+		</div>	
+	</div>
+	<div class="banner">
+		<div class="banner_in">
+			<div class="address clearfix">
+				<ul id="address_list">
+					<li>首页</li>
+					<li>></li>
+					<li>自驾团</li>
+					<li>></li>
+					<li>自驾团境内</li>
+					<li>></li>
+					<li>南京</li>
+				</ul>
+			</div>
+			<div class="search clearfix">
+				<input type="text" id="txt" value="南京">
+				<img src="../images/zhao-images/sea.png"  id="sea" alt="">
+			</div>
+			<div class="city clearfix">
+				<ul id="ct">
+					<li>热门搜索:</li>
+					<li class="cts">北京</li>
+					<li class="cts">西安</li>
+					<li class="cts">天津</li>
+					<li class="cts">上海</li>
+					<li class="cts">杭州</li>
+					<li class="cts">青海</li>
+					<li class="cts">西藏</li>
+					<li class="cts yunnan">云南</li>
+				</ul>
+			</div>
+			<div class="terms">
+				<div class="list_city clearfix">
+					<ul id="terms_city">
+						<li class="trip">出发城市</li>
+						<li><span class="all">全部</span></li>
+						<li> 
+							<span><a href="">北京</a></span>
+							<span><a href="">昆明</a></span>
+							<span><a href="">丽江</a></span>
+							<span><a href="">天津</a></span>
+							<span><a href="">当地</a></span>
+							<span><a href="">成都</a></span>
+							<span><a href="">广州</a></span>
+							<span><a href="">郑州</a></span>
+							<span><a href="">长沙</a></span>
+							<span><a href="">呼和浩特</a></span>
+							<span><a href="">上海</a></span>
+							<span><a href="">云南</a></span>
+							<span><a href="">西藏</a></span>	
+						</li>
+						<li class="more m1">更多
+							<a href="">V</a>	
+						</li>
+					</ul>
+					<div class="more_city clearfix">
+						<ul id="more_cts">
+							<li class="hebei">河北</li>
+							<li>辽宁</li>
+							<li>吉林</li>
+							<li>黑龙江</li>
+							<li>江苏</li>
+							<li>浙江</li>
+							<li>湖北</li>
+							<li>湖南</li>
+							<li>广东</li>
+							<li>广西</li>
+							<li>海南</li>
+							<li>重庆</li>
+							<li>四川</li>
+							<li>贵州</li>
+							<li>陕西</li>
+							<li>甘肃</li>
+						</ul>
+					</div>
+				</div>
+				<div class="list_day clearfix">
+					<ul id="terms_day">
+						<li class="trip">行程天数</li>
+						<li><span class="all">全部</span></li>
+						<li><span><a href="">1-3天</a></span></li>
+						<li>	
+							<span><a href="">3-7天</a></span>
+							<span><a href="">7-10天</a></span>
+							<span><a href="">10-15天</a></span>
+							<span><a href="">15天+</a></span>
+						</li>
+					</ul>
+				</div>
+				<div class="list_time  clearfix">
+					<ul id="terms_time">
+						<li class="trip">出行时间</li>
+						<li><span class="all">全部</span></li>
+						<li>
+							<span><a href="">周末</a></span>
+							<span><a href="">元旦</a></span>
+							<span><a href="">春节</a></span>
+							<span><a href="">清明</a></span>
+							<span><a href="">五一</a></span>
+							<span><a href="">端午</a></span>
+							<span><a href="">中秋</a></span>
+							<span><a href="">国庆</a></span>
+							<span><a href="">一月</a></span>
+							<span><a href="">二月</a></span>
+							<span><a href="">三月</a></span>
+							<span><a href="">四月</a></span>
+							<span><a href="">五月</a></span>
+							<span><a href="">六月</a></span>
+						</li>
+						<li class="more m2">更多
+							<a href="">V</a>	
+						</li>
+					</ul>
+					<div class="month_box">
+						<ul id="month">
+							<li>七月</li>
+							<li>八月</li>
+							<li>九月</li>
+							<li>十月</li>
+							<li>十一月</li>
+							<li>十二月</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="select clearfix">
+				<ul id="select_list">
+					<li>
+						综合排序
+					</li>
+					<li class="startList1">
+						<span>出发时间</span>
+						<img src="../images/zhao-images/jiao.png" alt="">
+					</li>
+					<li class="startList2">
+						<span>价格</span>
+						<img src="../images/zhao-images/jiao.png" alt="">
+					</li>
+					<li class="startList3">
+						<span>天数</span>
+						<img src="../images/zhao-images/jiao.png" alt="">
+					</li>
+				</ul>
+				<div class="startTime newNav">
+					<ul>
+						<li>一月</li>
+						<li>二月</li>
+						<li>三月</li>
+						<li>四月</li>
+						<li>五月</li>
+						<li>六月</li>
+						<li>七月</li>
+						<li>八月</li>
+						<li>九月</li>
+						<li>十月</li>
+						<li>十一月</li>
+						<li>十二月</li>
+					</ul>
+				</div>
+				<div class="price newNav">
+					<ul>
+						<li>1000-2000元</li>
+						<li>2000-3000元</li>
+						<li>3000-4000元</li>
+						<li>4000-5000元</li>
+						<li>5000-6000元</li>
+						<li>6000-7000元</li>
+						<li>7000-8000元</li>
+						<li>8000-9000元</li>
+						<li>9000-10000元</li>
+						<li>10000元以上</li>
+					</ul>
+				</div>
+				<div class="startDays newNav">
+					<ul>
+						<li>1-3天</li>
+						<li>3-7天</li>
+						<li>7-10天</li>
+						<li>10-15天</li>
+						<li>15天+</li>
+					</ul>
+				</div>
+				<ul id="select_right">
+					<li class="h"><span>共122个活动</span></li>
+					<li ><span id="selectTxt">1</span><span>/4</span></li>
+					<li class="right1 r1"><</li>
+					<li class="right1 r2">></li>
+				</ul>	
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="content_in">
+			<div class="ctt clearfix">
+				<div class="ct">
+					<img id="bigImg" src="../images/zhao-images/view/yunnan.jpg" alt="">
+					<div class="timetop clearfix">
+						<ul id="timelist">
+						 	<li>
+						 		<span id="money">11800<span id="money1">起</span></span>
+						 		</li>
+						 	<li>2016-11-13出发</li>
+						 	<li><span class="days">25天</span></li>
+						</ul>
+					</div>
+					<ul id="placelist">
+					 	<li><span id="place">南京-重庆-普者黑-元阳-泸沽湖</span></li>
+					 	<li>不一样的云南发现之旅</li>
+					</ul>
+					<div class="evaluate clearfix">
+						<ul id="evaluatelist">
+							<li >
+								<img src="../images/zhao-images/ren.png" id="ren" alt="">
+								<span id="chgColor">中国自驾游联盟南京站</span>
+							</li>
+							<li class="elimg">
+								<img id="yj" src="../images/zhao-images/yanjing.png" alt="">
+								<span id="yjNum">36</span>
+								<img id="shou" src="../images/zhao-images/shou.png" alt="">
+								<span id="shouNum">0</span>
+							</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="ct ct2">
+					<img id="bigImg" src="../images/zhao-images/view/putuoshan.jpg" alt="">
+					<div class="timetop clearfix">
+						<ul id="timelist">
+						 	<li>
+						 		<span id="money">1280<span id="money1">起</span></span>
+						 		</li>
+						 	<li>2016-11-01出发</li>
+						 	<li><span class="days">3天</span></li>
+						</ul>
+					</div>
+					<ul id="placelist">
+					 	<li><span id="place">南京-朱家尖-普陀山-宁波</span></li>
+					 	<li>海天佛国,南海圣境</li>
+					</ul>
+					<div class="evaluate clearfix">
+						<ul id="evaluatelist">
+							<li >
+								<img src="../images/zhao-images/ren.png" id="ren" alt="">
+								<span id="chgColor">中国自驾游联盟南京站</span>
+							</li>
+							<li class="elimg">
+								<img id="yj" src="../images/zhao-images/yanjing.png" alt="">
+								<span id="yjNum">36</span>
+								<img id="shou" src="../images/zhao-images/shou.png" alt="">
+								<span id="shouNum">0</span>
+							</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="ct ">
+					<img id="bigImg" src="../images/zhao-images/view/guangxi.jpg" alt="">
+					<div class="timetop clearfix">
+						<ul id="timelist">
+						 	<li>
+						 		<span id="money">4680<span id="money1">起</span></span>
+						 		</li>
+						 	<li>2016-10-12出发</li>
+						 	<li><span class="days">12天</span></li>
+						</ul>
+					</div>
+					<ul id="placelist">
+					 	<li><span id="place">南京-桂林-凭祥-北海-阳朔</span></li>
+					 	<li>不一样的云南发现之旅</li>
+					</ul>
+					<div class="evaluate clearfix">
+						<ul id="evaluatelist">
+							<li >
+								<img src="../images/zhao-images/ren.png" id="ren" alt="">
+								<span id="chgColor">中国自驾游联盟南京站</span>
+							</li>
+							<li class="elimg">
+								<img id="yj" src="../images/zhao-images/yanjing.png" alt="">
+								<span id="yjNum">36</span>
+								<img id="shou" src="../images/zhao-images/shou.png" alt="">
+								<span id="shouNum">0</span>
+							</li>
+						</ul>
+					</div>					
+				</div>
+			</div>
+			<div class="ctt clearfix">
+				<div class="ct">
+					<img id="bigImg" src="../images/zhao-images/view/yunnan.jpg" alt="">
+					<div class="timetop clearfix">
+						<ul id="timelist">
+						 	<li>
+						 		<span id="money">4580<span id="money1">起</span></span>
+						 		</li>
+						 	<li>2016-10-07出发</li>
+						 	<li><span class="days">7天</span></li>
+						</ul>
+					</div>
+					<ul id="placelist">
+					 	<li><span id="place">南京-建水-元阳-元江-玉溪-东川</span></li>
+					 	<li>壮美东川,光影元阳</li>
+					</ul>
+					<div class="evaluate clearfix">
+						<ul id="evaluatelist">
+							<li >
+								<img src="../images/zhao-images/ren.png" id="ren" alt="">
+								<span  id="chgColor">中国自驾游联盟南京站</span>
+							</li>
+							<li class="elimg">
+								<img id="yj" src="../images/zhao-images/yanjing.png" alt="">
+								<span id="yjNum">36</span>
+								<img id="shou" src="../images/zhao-images/shou.png" alt="">
+								<span id="shouNum">0</span>
+							</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="ct ct2">
+					<img id="bigImg" src="../images/zhao-images/view/qiandong.jpg" alt="">
+					<div class="timetop clearfix">
+						<ul id="timelist">
+						 	<li>
+						 		<span id="money">4580<span id="money1">起</span></span>
+						 		</li>
+						 	<li>2016-9-21出发</li>
+						 	<li><span class="days">12天</span></li>
+						</ul>
+					</div>
+					<ul id="placelist">
+					 	<li><span id="place">南京-西江-黄果树-荔波-桂林</span></li>
+					 	<li>返璞归真,回归自然</li>
+					</ul>
+					<div class="evaluate clearfix">
+						<ul id="evaluatelist">
+							<li >
+								<img src="../images/zhao-images/ren.png" id="ren" alt="">
+								<span  id="chgColor">中国自驾游联盟南京站</span>
+							</li>
+							<li class="elimg">
+								<img id="yj" src="../images/zhao-images/yanjing.png" alt="">
+								<span id="yjNum">36</span>
+								<img id="shou" src="../images/zhao-images/shou.png" alt="">
+								<span id="shouNum">0</span>
+							</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="ct ">
+					<img id="bigImg" src="../images/zhao-images/view/hulunbeier.jpg" alt="">
+					<div class="timetop clearfix">
+						<ul id="timelist">
+						 	<li>
+						 		<span id="money">3880<span id="money1">起</span></span>
+						 		</li>
+						 	<li>2016-8-12出发</li>
+						 	<li><span class="days">7天</span></li>
+						</ul>
+					</div>
+					<ul id="placelist">
+					 	<li><span id="place">呼和诺尔-冷极村-敖鲁古雅冰雪</span></li>
+					 	<li>冰雪盛宴,冬季那达慕</li>
+					</ul>
+					<div class="evaluate clearfix">
+						<ul id="evaluatelist">
+							<li >
+								<img src="../images/zhao-images/ren.png" id="ren" alt="">
+								<span  id="chgColor">中国自驾游联盟南京站</span>
+							</li>
+							<li class="elimg">
+								<img id="yj" src="../images/zhao-images/yanjing.png" alt="">
+								<span id="yjNum">36</span>
+								<img id="shou" src="../images/zhao-images/shou.png" alt="">
+								<span id="shouNum">0</span>
+							</li>
+						</ul>
+					</div>					
+				</div>
+			</div>
+			<div class="ctt clearfix">
+				<div class="ct">
+					<img id="bigImg" src="../images/zhao-images/view/guangdong.jpg" alt="">
+					<div class="timetop clearfix">
+						<ul id="timelist">
+						 	<li>
+						 		<span id="money">3680<span id="money1">起</span></span>
+						 		</li>
+						 	<li>2016-6-27出发</li>
+						 	<li><span class="days">6天</span></li>
+						</ul>
+					</div>
+					<ul id="placelist">
+					 	<li><span id="place">南京-开平-番禹-深圳</span></li>
+					 	<li>领略岭南风光,品味地道美食</li>
+					</ul>
+					<div class="evaluate clearfix">
+						<ul id="evaluatelist">
+							<li >
+								<img src="../images/zhao-images/ren.png" id="ren" alt="">
+								<span  id="chgColor">中国自驾游联盟南京站</span>
+							</li>
+							<li class="elimg">
+								<img id="yj" src="../images/zhao-images/yanjing.png" alt="">
+								<span id="yjNum">36</span>
+								<img id="shou" src="../images/zhao-images/shou.png" alt="">
+								<span id="shouNum">0</span>
+							</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="ct ct2">
+					<img id="bigImg" src="../images/zhao-images/view/chenxi.jpg" alt="">
+					<div class="timetop clearfix">
+						<ul id="timelist">
+						 	<li>
+						 		<span id="money">3580<span id="money1">起</span></span>
+						 		</li>
+						 	<li>2016-9-21出发</li>
+						 	<li><span class="days">8天</span></li>
+						</ul>
+					</div>
+					<ul id="placelist">
+					 	<li><span id="place">昆明-丽江-香格里拉-大理</span></li>
+					 	<li>最经典滇西北行程,体验梦中的香格里拉</li>
+					</ul>
+					<div class="evaluate clearfix">
+						<ul id="evaluatelist">
+							<li >
+								<img src="../images/zhao-images/ren.png" id="ren" alt="">
+								<span  id="chgColor">中国自驾游联盟南京站</span>
+							</li>
+							<li class="elimg">
+								<img id="yj" src="../images/zhao-images/yanjing.png" alt="">
+								<span id="yjNum">36</span>
+								<img id="shou" src="../images/zhao-images/shou.png" alt="">
+								<span id="shouNum">0</span>
+							</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="ct ">
+					<img id="bigImg" src="../images/zhao-images/view/shuye.jpg" alt="">
+					<div class="timetop clearfix">
+						<ul id="timelist">
+						 	<li>
+						 		<span id="money">3580<span id="money1">起</span></span>
+						 		</li>
+						 	<li>2016-6-16出发</li>
+						 	<li><span class="days">8天</span></li>
+						</ul>
+					</div>
+					<ul id="placelist">
+					 	<li><span id="place">普洱-望天树-傣族园-抚仙湖</span></li>
+					 	<li>大理双廊洱海,腾冲银杏</li>
+					</ul>
+					<div class="evaluate clearfix">
+						<ul id="evaluatelist">
+							<li >
+								<img src="../images/zhao-images/ren.png" id="ren" alt="">
+								<span  id="chgColor">中国自驾游联盟南京站</span>
+							</li>
+							<li class="elimg">
+								<img id="yj" src="../images/zhao-images/yanjing.png" alt="">
+								<span id="yjNum">36</span>
+								<img id="shou" src="../images/zhao-images/shou.png" alt="">
+								<span id="shouNum">0</span>
+							</li>
+						</ul>
+					</div>					
+				</div>
+			</div>
+			<div class="ctt clearfix">
+				<div class="ct">
+					<img id="bigImg" src="../images/zhao-images/view/jiuzhaigou.jpg" alt="">
+					<div class="timetop clearfix">
+						<ul id="timelist">
+						 	<li>
+						 		<span id="money">1880<span id="money1">起</span></span>
+						 		</li>
+						 	<li>2016-5-21出发</li>
+						 	<li><span class="days">5天</span></li>
+						</ul>
+					</div>
+					<ul id="placelist">
+					 	<li><span id="place">广元-文县-九寨沟-都江堰</span></li>
+					 	<li>走进童话冰雪世界</li>
+					</ul>
+					<div class="evaluate clearfix">
+						<ul id="evaluatelist">
+							<li >
+								<img src="../images/zhao-images/ren.png" id="ren" alt="">
+								<span  id="chgColor">重庆迦南自驾俱乐部</span>
+							</li>
+							<li class="elimg">
+								<img id="yj" src="../images/zhao-images/yanjing.png" alt="">
+								<span id="yjNum">36</span>
+								<img id="shou" src="../images/zhao-images/shou.png" alt="">
+								<span id="shouNum">0</span>
+							</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="ct ct2">
+					<img id="bigImg" src="../images/zhao-images/view/changbaishan.jpg" alt="">
+					<div class="timetop clearfix">
+						<ul id="timelist">
+						 	<li>
+						 		<span id="money">4980<span id="money1">起</span></span>
+						 		</li>
+						 	<li>2016-4-21出发</li>
+						 	<li><span class="days">9天</span></li>
+						</ul>
+					</div>
+					<ul id="placelist">
+					 	<li><span id="place">重庆-长白山-敦化-雪乡-哈尔滨</span></li>
+					 	<li>梦幻雪乡,北国童话</li>
+					</ul>
+					<div class="evaluate clearfix">
+						<ul id="evaluatelist">
+							<li >
+								<img src="../images/zhao-images/ren.png" id="ren" alt="">
+								<span  id="chgColor">北京969汽车俱乐部</span>
+							</li>
+							<li class="elimg">
+								<img id="yj" src="../images/zhao-images/yanjing.png" alt="">
+								<span id="yjNum">36</span>
+								<img id="shou" src="../images/zhao-images/shou.png" alt="">
+								<span id="shouNum">0</span>
+							</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="ct ">
+					<img id="bigImg" src="../images/zhao-images/view/langya1.jpg" alt="">
+					<div class="timetop clearfix">
+						<ul id="timelist">
+						 	<li>
+						 		<span id="money">1580<span id="money1">起</span></span>
+						 		</li>
+						 	<li>2016-4-16出发</li>
+						 	<li><span class="days">4天</span></li>
+						</ul>
+					</div>
+					<ul id="placelist">
+					 	<li><span id="place">台儿庄-琅琊台-东营-北京</span></li>
+					 	<li>寻梦琅琊,探寻琅琊台</li>
+					</ul>
+					<div class="evaluate clearfix">
+						<ul id="evaluatelist">
+							<li >
+								<img src="../images/zhao-images/ren.png" id="ren" alt="">
+								<span  id="chgColor">北京969汽车俱乐部</span>
+							</li>
+							<li class="elimg">
+								<img id="yj" src="../images/zhao-images/yanjing.png" alt="">
+								<span id="yjNum">36</span>
+								<img id="shou" src="../images/zhao-images/shou.png" alt="">
+								<span id="shouNum">0</span>
+							</li>
+						</ul>
+					</div>					
+				</div>
+			</div>
+			<div class="ctt clearfix">
+				<div class="ct">
+					<img id="bigImg" src="../images/zhao-images/view/aozhou.jpg" alt="">
+					<div class="timetop clearfix">
+						<ul id="timelist">
+						 	<li>
+						 		<span id="money">17800<span id="money1">起</span></span>
+						 		</li>
+						 	<li>2016-4-02出发</li>
+						 	<li><span class="days">11天</span></li>
+						</ul>
+					</div>
+					<ul id="placelist">
+					 	<li><span id="place">墨尔本-大洋路-堪培拉-悉尼</span></li>
+					 	<li>大洋路深度探索野性澳洲风情</li>
+					</ul>
+					<div class="evaluate clearfix">
+						<ul id="evaluatelist">
+							<li >
+								<img src="../images/zhao-images/ren.png" id="ren" alt="">
+								<span id="chgColor">七十迈国际自驾</span>
+							</li>
+							<li class="elimg">
+								<img id="yj" src="../images/zhao-images/yanjing.png" alt="">
+								<span id="yjNum">36</span>
+								<img id="shou" src="../images/zhao-images/shou.png" alt="">
+								<span id="shouNum">0</span>
+							</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="ct ct2">
+					<img id="bigImg" src="../images/zhao-images/view/xinxilan.jpg" alt="">
+					<div class="timetop clearfix">
+						<ul id="timelist">
+						 	<li>
+						 		<span id="money">19800<span id="money1">起</span></span>
+						 		</li>
+						 	<li>2016-3-02出发</li>
+						 	<li><span class="days">14天</span></li>
+						</ul>
+					</div>
+					<ul id="placelist">
+					 	<li><span id="place">奥克兰-皇后镇-蒂阿瑙-基督城</span></li>
+					 	<li>长白云之乡、地球上最后一块净土</li>
+					</ul>
+					<div class="evaluate clearfix">
+						<ul id="evaluatelist">
+							<li >
+								<img src="../images/zhao-images/ren.png" id="ren" alt="">
+								<span id="chgColor">七十迈国际自驾</span>
+							</li>
+							<li class="elimg">
+								<img id="yj" src="../images/zhao-images/yanjing.png" alt="">
+								<span id="yjNum">36</span>
+								<img id="shou" src="../images/zhao-images/shou.png" alt="">
+								<span id="shouNum">0</span>
+							</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="ct ">
+					<img id="bigImg" src="../images/zhao-images/view/jianpuzhai.jpg" alt="">
+					<div class="timetop clearfix">
+						<ul id="timelist">
+						 	<li>
+						 		<span id="money">6980<span id="money1">起</span></span>
+						 		</li>
+						 	<li>2016-02-30出发</li>
+						 	<li><span class="days">9天</span></li>
+						</ul>
+					</div>
+					<ul id="placelist">
+					 	<li><span id="place">金边-西哈努克港-暹粒</span></li>
+					 	<li>柬埔寨金边暹粒西港自驾之旅</li>
+					</ul>
+					<div class="evaluate clearfix">
+						<ul id="evaluatelist">
+							<li >
+								<img src="../images/zhao-images/ren.png" id="ren" alt="">
+								<span id="chgColor">重庆迦南自驾俱乐部</span>
+							</li>
+							<li class="elimg">
+								<img id="yj" src="../images/zhao-images/yanjing.png" alt="">
+								<span id="yjNum">36</span>
+								<img id="shou" src="../images/zhao-images/shou.png" alt="">
+								<span id="shouNum">0</span>
+							</li>
+						</ul>
+					</div>					
+				</div>
+			</div>
+			<div class="ctt clearfix">
+				<div class="ct">
+					<img id="bigImg" src="../images/zhao-images/view/jiazhou.jpg" alt="">
+					<div class="timetop clearfix">
+						<ul id="timelist">
+						 	<li>
+						 		<span id="money">18800<span id="money1">起</span></span>
+						 		</li>
+						 	<li>2016-02-11出发</li>
+						 	<li><span class="days">12天</span></li>
+						</ul>
+					</div>
+					<ul id="placelist">
+					 	<li><span id="place">旧金山-文图拉-洛杉矶-檀香山</span></li>
+					 	<li>加州一号公路+夏威夷欧胡岛大环岛</li>
+					</ul>
+					<div class="evaluate clearfix">
+						<ul id="evaluatelist">
+							<li >
+								<img src="../images/zhao-images/ren.png" id="ren" alt="">
+								<span id="chgColor">七十迈国际自驾</span>
+							</li>
+							<li class="elimg">
+								<img id="yj" src="../images/zhao-images/yanjing.png" alt="">
+								<span id="yjNum">36</span>
+								<img id="shou" src="../images/zhao-images/shou.png" alt="">
+								<span id="shouNum">0</span>
+							</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="ct ct2">
+					<img id="bigImg" src="../images/zhao-images/view/moningdun.jpg" alt="">
+					<div class="timetop clearfix">
+						<ul id="timelist">
+						 	<li>
+						 		<span id="money">23980<span id="money1">起</span></span>
+						 		</li>
+						 	<li>2016-01-30出发</li>
+						 	<li><span class="days">10天</span></li>
+						</ul>
+					</div>
+					<ul id="placelist">
+					 	<li><span id="place">墨尔本-莫宁顿半岛-华南府</span></li>
+					 	<li>饱览大自然美景,感受澳洲人的活力和闲适</li>
+					</ul>
+					<div class="evaluate clearfix">
+						<ul id="evaluatelist">
+							<li >
+								<img src="../images/zhao-images/ren.png" id="ren" alt="">
+								<span id="chgColor">爱车环球自驾</span>
+							</li>
+							<li class="elimg">
+								<img  id="yj" src="../images/zhao-images/yanjing.png" alt="">
+								<span id="yjNum">36</span>
+								<img id="shou" src="../images/zhao-images/shou.png" alt="">
+								<span id="shouNum">0</span>
+							</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="ct ">
+					<img id="bigImg" src="../images/zhao-images/view/yuenan.jpg" alt="">
+					<div class="timetop clearfix">
+						<ul id="timelist">
+						 	<li>
+						 		<span id="money">2580<span id="money1">起</span></span>
+						 		</li>
+						 	<li>2016-12-07出发</li>
+						 	<li><span class="days">7天</span></li>
+						</ul>
+					</div>
+					<ul id="placelist">
+					 	<li><span id="place">北京-南宁-下龙湾-吉婆岛-河内</span></li>
+					 	<li>探访世界自然遗产之一海上桂林下龙湾</li>
+					</ul>
+					<div class="evaluate clearfix">
+						<ul id="evaluatelist">
+							<li >
+								<img src="../images/zhao-images/ren.png" id="ren" alt="">
+								<span id="chgColor">重庆迦南自驾俱乐部</span>
+							</li>
+							<li class="elimg">
+								<img id="yj"src="../images/zhao-images/yanjing.png" alt="">
+								<span id="yjNum">36</span>
+								<img id="shou" src="../images/zhao-images/shou.png" alt="">
+								<span id="shouNum">0</span>
+							</li>
+						</ul>
+					</div>					
+				</div>
+			</div>
+		</div>		
+	</div>
+	<div class="footer1">
+		<div class="foot1 clearfix">
+			<ul id="footlist">
+				<li>人民交通出版社</li>
+				<li>爱自驾</li>
+				<li>联系我们</li>
+				<li>友情链接</li>
+				<li>爱自驾品牌店</li>
+			</ul>	
+		</div>
+	</div>
+	<div class="footer2 clearfix">
+		<ul>
+			<li>人民交通出版社股份有限公司</li>
+			<li>京ICP备15018898号-1</li>
+		</ul>
+	</div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+	//  top   jq
+	$(".top_nav .top_list").mouseenter(function(){
+		$("#live").attr("src","../images/zhao-images/newlive.png");
+		$(".top_list li").css("color","#50B8D8")
+	}).mouseleave(function(){
+		$("#live").attr("src","../images/zhao-images/live.png");
+		$(".top_list li").css("color","#fff")
+	}).click(function(){
+		$(this).next().toggle()//对所选开关 
+	})
+
+	$("#citys li").mouseenter(function(){
+		$(this).css("background-color","#f1fafa")
+	}).mouseleave(function(){
+		$(this).css("background-color","#fff")
+	}).click(function(){
+		var cityTxt = $(this).text();
+		// console.log(cityTxt);
+		$(this).closest(".top_city").siblings(".top_list").find(".newCity").text(cityTxt)
+	})
+
+	$(".phone").mouseenter(function(){
+		$("#phone1").attr("src","../images/zhao-images/newphone.png")
+		$(".phone li").css("color","#50B8D8")
+	}).mouseleave(function(){
+		$("#phone1").attr("src","../images/zhao-images/phone.png")
+		$(".phone li").css("color","#fff")
+	}).click(function(){
+		window.location.href="http://www.izijia.cn/app_down/"
+	})
+
+	$(".login #qq").mouseenter(function(){
+		$(this).attr("src","../images/zhao-images/newqq.png")
+	}).mouseleave(function(){
+		$(this).attr("src","../images/zhao-images/qq.gif")
+	}).click(function(){
+		window.location.href="https://graph.qq.com/oauth/show?which=Login&display=pc&client_id=101245346&redirect_uri=http%3A%2F%2Fmember.izijia.cn%2Fqq_login.php&response_type=code&scope=get_user_info%2Cadd_share"
+	})
+	$(".login #sina").mouseenter(function(){
+		$(this).attr("src","../images/zhao-images/newsina.png");
+	}).mouseleave(function(){
+		$(this).attr("src","../images/zhao-images/sina.png");
+	}).click(function(){
+		window.location.href="https://api.weibo.com/oauth2/authorize?client_id=1194106718&redirect_uri=http%3A%2F%2Fmember.izijia.cn%2F%2Findex.php%3Fs%3D%2Fhome%2Faddons%2Fexecute%2F_addons%2Fsync_login%2F_controller%2Fbase%2F_action%2Fcallback%2Ftype%2Fsina.html&response_type=code"
+	})
+	$(".login li").mouseenter(function(){
+		$(this).css("color","#50B8D8");
+		$("#shu").css("color","#fff");
+	}).mouseleave(function(){
+		$(this).css("color","#fff");
+	})
+
+
+    // banner   city jq 样式
+	$("#ct .cts").click(function(){
+		var ctsTxt = $(this).text();
+		$(this).closest(".city").siblings(".search").find("#txt").val(ctsTxt)
+	})
+	// banner  terms jq 特效
+	$(".terms li span").mouseenter(function(){
+		$(this).children().css("color","#fff")
+	}).mouseleave(function(){
+		$(this).children().css("color","#999999")
+	})
+	$("#terms_city .m1").click(function(){
+		$(this).parent().siblings().toggle();
+	})
+	$(".more_city").mouseleave(function(){
+		$(this).slideUp();
+	})
+	// .click(function(){
+	// 	$(this).attr("background-color","#50bbdb")
+	// })
+	$("#terms_time .m2").click(function(){
+		console.log("ajkgnkajsngkjsngjn")
+		$(this).parent().siblings(".month_box").find("#month").stop().slideDown(500);
+	})
+	$("#month").mouseleave(function(){
+		$(this).stop().slideUp(500);
+	})
+	//select   jq
+	$(".startList1").click(function(){
+		$(this).parent().siblings(".startTime").stop().slideDown(500)
+	})
+	$(".startTime").mouseleave(function(){
+		$(this).stop().slideUp(500)
+	})
+	$(".startList2").click(function(){
+		$(this).parent().siblings(".price").stop().slideDown(500)
+	})
+	$(".price").mouseleave(function(){
+		$(this).stop().slideUp(500)
+	})
+	$(".startList3").click(function(){
+		$(this).parent().siblings(".startDays").stop().slideDown(500)
+	})
+	$(".startDays").mouseleave(function(){
+		$(this).stop().slideUp(500)
+	})
+	$(".newNav ul").mouseleave(function(){
+		$(this).closest(".newNav").stop().slideUp(500)
+	})
+
+	$("#select_right .r2").click(function(){
+		var selectTxt = $(this).siblings().children("#selectTxt").text();
+		var num = Number(selectTxt)+1;
+		$(this).siblings().children("#selectTxt").text(num);
+		if(num >= 4){
+			$(this).siblings().children("#selectTxt").text(4);
+		}
+	});
+	$("#select_right .r1").click(function(){
+		var selectTxt = $(this).siblings().children("#selectTxt").text();
+		var num = Number(selectTxt)-1;
+		$(this).siblings().children("#selectTxt").text(num);
+		if(num <= 1){
+			$(this).siblings().children("#selectTxt").text(1);
+		}
+	});
+
+	// content   jq
+	$(".ct").mouseenter(function(){
+		$(this).find("#chgColor").css("color","#51bbdb")
+		
+	}).mouseleave(function(){
+		$(this).find("#chgColor").css("color","#999999")
+	})
+	$(".evaluate #shou").click(function(){
+		var shouTxt = $(this).siblings("#shouNum").text();
+		var shouNum = Number(shouTxt) + 1;
+		$(this).siblings("#shouNum").text(shouNum);
+	})
+	$(".evaluate #yj").click(function(){
+		var yjTxt = $(this).siblings("#yjNum").text();
+		var yjNum = Number(yjTxt) + 1;
+		$(this).siblings("#yjNum").text(yjNum);
+	})
+</script>
+
+</html>

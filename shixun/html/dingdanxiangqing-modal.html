@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单详情模态框</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<style type="text/css">
+		p{
+			margin: 0px 0px 0px 0px;
+			padding: 0px 0px 0px 0px;
+		}
+		.modal-dialog{
+			min-width: 803px;
+		}
+		.m-head{
+			height: 178px;
+			width: 800px;
+		}
+		.m-head1{
+			height:85px;
+			border-bottom: 1px solid #ececec;
+		}
+		.order{
+			float: left;
+			margin-left: 330px;
+		}
+		.pic{
+			float: left;
+			margin-left: 300px;
+			cursor: pointer;
+		}
+		.order span{
+			font-size: 28px;
+			font-family:Microsoft YaHei;
+			color: #000000;
+			line-height: 80px;
+			text-align: center;
+		}
+		.pic img{
+			padding-top: 15px;
+		}
+		.pic p{
+			margin-left: 8px;
+			font-size: 16px;
+			font-family:Microsoft YaHei;
+			color: #000000;
+		}
+		.clear1{
+			clear: both;
+		}
+		.m-head2{
+			clear: both;
+			height: 93px;
+			border-bottom: 1px solid #ececec;
+		}
+		.m-head2 p{
+			font-size: 24px;
+			font-family: Microsoft YaHei;
+			color: #000000;
+			line-height: 80px;
+			margin-left: 30px;
+		}
+		.m-head2 p span{
+			color: #ea5023;
+			font-size: 30px;
+			font-family: Microsoft YaHei;
+			line-height: 80px;
+		}
+		.m-content{
+			width: 800px;
+		}
+		.m-content1{
+			height: 320px;
+			border-bottom: 1px solid #ececec;
+		}
+		.m-content1_1{
+			height:52px;
+			background-color:#f7f7f7;
+		}
+		.m-content1_1 p{
+			line-height: 52px;
+			font-size:24px;
+			font-family: Microsoft YaHei;
+			color:#000000;
+			margin-left: 30px;
+		}
+		.m-content1_2{
+			height: 235px;
+			border-bottom: 1px solid #ececec;
+		}
+		.con1{
+			width:390px;
+			height:168px;
+			margin-left: 30px;
+			line-height: 58px;
+		}
+		.con1 p{
+			font-family: Microsoft YaHei;
+			font-size: 18px;
+			color: #000000;
+		}
+		.con1 p span{
+			margin-left:150px;
+		}
+		.m-content2{
+			height:240px;
+			width: 800px;
+			border-bottom: 1px solid #ececec;
+		}
+		.m-content2_1{
+			height:55px;
+			background-color: #f7f7f7;
+		}
+		.m-content2_2{
+			height:150px;
+			border-bottom:1px solid #ececec;
+		}
+		.m-content2_1 p{
+			margin-left: 30px;
+			font-size:24px;
+			font-family: Microsoft YaHei;
+			color:#000000;
+			line-height: 55px;
+		}
+		.m-content2_2 p{
+			font-family: Microsoft YaHei;
+			font-size: 18px;
+			color: #000000;
+			margin-left: 30px;
+			margin-top: 30px;
+		}
+		.m-content2_2 span{
+			margin-left: 95px;
+		}
+		.m-content2_2 .con2{
+			float: left;
+		}
+		.m-content2_2 .con3{
+			float: left;
+			margin-left: 70px;
+		}
+		.m-content2_2 .con4{
+			margin-left: 70px;
+			float: left;
+		}
+		.m-content3{
+			height:505px;
+			width: 800px;
+			border-bottom: 1px solid #ececec;
+		}
+		.m-content3_1{
+			height: 58px;
+			background-color: #f7f7f7;
+		}
+		.m-content3_1 p{
+			font-family: Microsoft YaHei;
+			font-size: 24px;
+			color: #000000;
+			margin-left: 30px;
+			line-height: 58px;
+		}
+		.m-content3_2{
+			height: 205px;
+			border-bottom: 1px dashed #ececec;
+		}
+		.m-content3_2 p{
+			font-family: Microsoft YaHei;
+			font-size: 20px;
+			color: #000000;
+			margin-left: 30px;
+			line-height:50px;
+		}
+		.m-content3_2 .con5{
+			float: left;
+		}
+		.m-content3_2 .con5 p{
+			font-size:18px;
+		}
+		.m-content3_2 .con6{
+			float: left;
+			margin-left: 70px;
+		}
+		.m-content3_2 .con6 p{
+			font-size:18px;
+		}
+		.m-content3_2 .con7{
+			float: left;
+			margin-left: 150px;
+		}
+		.m-content3_2 .con7 p{
+			font-size:18px;
+		}
+		.m-content3_2 .con7 .con7-name{
+			margin-left:85px;
+		}
+		.m-content3_2 .con7 .con7-cell{
+			margin-left:55px;
+		}
+		.m-content3_3{
+			height: 205px;
+			border-bottom: 1px solid #ececec;
+		}
+		.m-content4{
+			height:235px;
+			width: 800px;
+			border-bottom: 1px solid #ececec;
+		}
+		.m-content4_1{
+			height: 58px;
+			background-color: #f7f7f7;
+		}
+		.m-content4_1 p{
+			font-family: Microsoft YaHei;
+			font-size: 24px;
+			color: #000000;
+			margin-left: 30px;
+			line-height: 58px;
+		}
+		.m-content4_2{
+			height:60px;
+			border-bottom: 1px dashed #ececec;
+		}
+		.m-content4_3{
+			height:80px;
+			border-bottom: 1px solid #ececec;
+		}
+		.m-content4_2 .con8{
+			float: left;
+			margin-left: 30px;
+		}
+		.m-content4_2 .con8 p{
+			line-height: 60px;
+			font-family:Microsoft YaHei;
+			font-size: 18px;
+			color: #000000;
+		}
+		.m-content4_2 .con8 p span{
+			margin-left: 65px;
+		}
+		.m-content4_2 .con9{
+			float: left;
+			margin-left: 250px;
+		}
+		.m-content4_2 .con9 p{
+			line-height: 60px;
+			font-family:Microsoft YaHei;
+			font-size: 18px;
+			color: #000000;
+		}
+		.m-content5{
+			height: 315px;
+			border-bottom: 1px solid #ececec;
+		}
+		.m-content5_1{
+			height: 56px;
+			background-color: #f7f7f7;
+		}
+		.m-content5_1 p{
+			font-family: Microsoft YaHei;
+			font-size: 24px;
+			color: #000000;
+			margin-left: 30px;
+			line-height: 56px;
+		}
+		.m-content5_2{
+			height: 225px;
+			border-bottom: 1px solid #ececec;
+		}
+		.m-content5_2 .con10{
+			float: left;
+			margin-left: 30px;
+		}
+		.m-content5_2 .con10 p{
+			line-height: 70px;
+			font-family:Microsoft YaHei;
+			font-size: 18px;
+			color: #000000;
+		}
+		.m-content5_2 .con11{
+			float: left;
+			margin-left:78px;
+		}
+		.m-content5_2 .con11 p{
+			line-height: 70px;
+			font-family:Microsoft YaHei;
+			font-size: 18px;
+			color: #000000;
+		}
+		.m-content5_2 .con11 p span{
+			margin-left: 190px;
+		}
+		.m-content6{
+			height:138px;
+			border-bottom: 1px solid #ececec;
+		}
+		.m-content6_1{
+			height:58px;
+			background-color: #f7f7f7;
+		}
+		.m-content6_1 p{
+			font-family: Microsoft YaHei;
+			font-size: 24px;
+			color: #000000;
+			margin-left: 30px;
+			line-height: 58px;
+		}
+		.m-content6_2{
+			height:80px;
+		}
+		.m-content6_2 p{
+			font-family: Microsoft YaHei;
+			font-size: 16px;
+			color: #000000;
+			margin-left: 30px;
+			line-height: 80px;
+		}
+		.m-content7{
+			height: 97px;
+		}
+		.m-content7_1{
+			width: 60px;
+			height: 78px;
+			margin-top: 40px;
+			margin-left: 700px;
+			cursor: pointer;
+		}
+		.m-content7_1 img{
+			margin-left: 18px;
+		}
+		.m-content7_1 p{
+			color: #02b9f2;
+		}
+	</style>
+</head>
+<body>
+
+
+	<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+	  Launch demo modal
+	</button>
+ -->
+ 	<a href="#myModal">订单详情</a>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  	<div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		    	<div class="m-head">
+		    		<div class="m-head1">
+		    			<div class="order"><span>订单详情</span></div>
+						<div class="pic">
+							<img src="../images/liu-images/modal-x.png" class="close" data-dismiss="modal" aria-label="Close">
+							<p>关闭</p>
+						</div>
+		    		</div>
+		    		<div class="clear1"></div>
+					<div class="m-head2">
+						<p>订单支付总额：<span>￥5280</span></p>
+					</div>
+		    	</div>
+		    	<div class="m-content">
+					<div class="m-content1">
+						<div class="m-content1_1">
+							<p>线路信息</p>
+						</div>
+						<div class="m-content1_2">
+							<div class="con1">
+								<p>自驾团名称：云南落地自驾行摄之旅</p>
+								<p>出游日期：2016-01-17</p>
+								<p>成人：1人 <span>儿童：0人</span></p>
+								<p>房间：2人间，愿意拼房</p>
+							</div>
+						</div>
+					</div>
+					<div class="m-content2">
+						<div class="m-content2_1">
+							<p>联系人信息</p>
+						</div>
+						<div class="m-content2_2">
+							<div class="con2">
+								<p>姓名：</p>
+								<p>手机号码</p>
+							</div>
+							<div class="con3">
+								<p>罗小小</p>
+								<p>18270837899 </p>
+							</div>
+							<div class="con4">
+								<p>性别：<span>女</span></p>
+								<p>邮箱：2689326087@qq.com</p>
+							</div>
+							<div class="clear1"></div>
+						</div>
+					</div>
+					<div class="m-content3">
+						<div class="m-content3_1">
+							<p>游客信息</p>
+						</div>
+						<div class="m-content3_2">
+							<p>游客1</p>
+							<div class="con5">
+								<p>游客类型:</p>
+								<p>性别:</p>
+								<p>证件:</p>
+							</div>
+							<div class="con6">
+								<p>成人</p>
+								<p>女</p>
+								<p>护照</p>
+							</div>
+							<div class="con7">
+								<p>姓名:<span class="con7-name">罗小小</span></p>
+								<p>手机号：<span class="con7-cell">18270837899</span></p>
+								<p>452726199102031552</p>
+							</div>
+						</div>
+						<div class="m-content3_3 m-content3_2 ">
+							<p>游客2</p>
+							<div class="con5">
+								<p>游客类型:</p>
+								<p>性别:</p>
+								<p>证件:</p>
+							</div>
+							<div class="con6">
+								<p>成人</p>
+								<p>女</p>
+								<p>护照</p>
+							</div>
+							<div class="con7">
+								<p>姓名:<span class="con7-name">罗笑笑</span></p>
+								<p>手机号：<span class="con7-cell">18270837899</span></p>
+								<p>452726199102031552</p>
+							</div>
+						</div>
+					</div>
+					<div class="m-content4">
+						<div class="m-content4_1">
+							<p>保险</p>
+						</div>
+						<div class="m-content4_2">
+							<div class="con8">
+								<p>平安爱自驾境外长线保险<span>经典型2份</span></p>
+							</div>
+							<div class="con9">
+								<p>￥177/一份</p>
+							</div>
+							<div class="clear1"></div>
+						</div>
+						<div class="m-content4_3 m-content4_2">
+							<div class="con8">
+								<p>平安爱自驾境外长线保险<span>经典型2份</span></p>
+							</div>
+							<div class="con9">
+								<p>￥177/一份</p>
+							</div>
+							<div class="clear1"></div>
+						</div>
+					</div>
+					<div class="m-content5">
+						<div class="m-content5_1">
+							<p>预订信息</p>
+						</div>
+						<div class="m-content5_2">
+							<div class="con10">
+								<p>发票信息：</p>
+								<p>发票抬头：</p>
+								<p>配送地址：</p>
+							</div>
+							<div class="con11">
+								<p>是否需要发票：是</p>
+								<p>无<span>发票明细：会议费</span></p>
+								<p>北京市朝阳区北辰东路八号汇园国际k座</p>
+							</div>
+							<div class="clear1"></div>
+						</div>
+					</div>
+					<div class="m-content6">
+						<div class="m-content6_1">
+							<p>更多要求</p>
+						</div>
+						<div class="m-content6_2">
+							<p>温馨的住宿和美味的餐食</p>
+						</div>
+					</div>
+					<div class="m-content7">
+						<div class="m-content7_1">
+							<img src="../images/liu-images/m-jiao.png" alt="">
+							<p>返回顶部</p>
+						</div>
+					</div>
+		    	</div>
+		   	</div>
+	  	</div>
+	</div>
+
+	<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$("a").click(function(){
+			$("#myModal").modal();
+		})
+
+	</script>
+</body>
+</html>

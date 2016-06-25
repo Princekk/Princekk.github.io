@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>11</title>
+	
+	<link rel="stylesheet" type="text/css" href="../css/bootstrapwang.css">
+	<link rel="stylesheet" type="text/css" href="../css/wang11.css">
+</head>
+<body>
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+    	<div class="modal-dialog modal-sm">
+    		<div class="modal-content">
+      			<div class="modal-header">
+      				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<div class="model-mtbox">
+						<div class="model-mtbox1">
+							<img src="../images/wang-images/huiyuan.jpg">
+							<ul>
+								<li class="azj">爱自驾</li>
+								<li class="kq">开启你的自驾之旅</li>
+							</ul>
+						</div>
+						<input type="text" value="" placeholder="邮箱/手机/用户名" class="ysh">
+						<input type="text" value="" placeholder="密码" class="mm">
+						<input type="text" value="登录" class="dl">
+						<div class="mfzc">
+							<a href="" class="wjm">忘记密码</a>
+							<p class="zh1">还没有账号？<a href="" class="zh2">免费注册</a></p>
+						</div>
+						<div class="hx">
+							<div class="hx1"><img src="../images/wang-images/hx.jpg">
+							</div>
+							<div class="mz1">
+								<span>其他报名方式</span>
+							</div>
+							<div class="hx2"><img src="../images/wang-images/hx.jpg">
+							</div>
+						</div>
+						<input type="text" value="不登录，直接报名>" class="bm">
+					</div>
+
+        		
+        		</div>
+      		</div>
+
+        </div>
+   </div>
+</div>
+	<!-- <div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="    dialog" aria-labelledby="mySmallModalLabel">
+  		<div class="modal-dialog modal-sm" role="document">
+    		<div class="modal-content">
+     			<div class="modal-content">
+     			</div>
+   			</div>
+  		</div>
+	</div>
+ -->
+	<div class="modal fade" id="itModal" tabindex="-1" role="dialog" aria-labelledby="itModalLabel">
+    <div class="modal-dialog" role="document">
+    	<div class="modal-dialog modal-sm">
+    		<div class="modal-content">
+      			<div class="modal-header">
+      				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<div class="modal-mtbox3">
+						<div class="modal-mtbox4">
+							<img src="../images/wang-images/huiyuan.jpg">
+							<ul>
+								<li class="azj1">爱自驾</li>
+								<li class="kq1">开启你的自驾之旅</li>
+							</ul>
+						</div>
+						<div class="sjzc">
+							<p>用手机注册</p>
+						</div>
+						<input type="text" value="" placeholder="请输入邮箱" class="yx2">
+						<input type="text" value="" placeholder="用户名，4-16个字符，字母/中文/数字" class="yx3">
+						<input type="text" value="" placeholder="设置密码" class="yx4">
+						<input type="text" value="" placeholder="输入密码" class="yx5">
+						<input type="text" value="" placeholder="输入邀请码，可不填" class="yx6">
+						<div class="xy"> 
+							<p>注册视为同意</p><span><strong>《爱自驾用户使用协议》</strong></span>
+							<input type="text" value="注册" class="tezc">
+						</div>
+						<div class="hxx">
+							<div class="hxx1"><img src="images/hx.jpg">
+							</div>
+							<div class="mzz1">
+								<span>其他报名方式</span>
+							</div>
+							<div class="hxx2"><img src="images/hx.jpg">
+							</div>
+						</div>
+						<input type="text" value="快速登录>" class="ks">
+					</div>
+
+        		
+        		</div>
+      		</div>
+
+        </div>
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	<div id="header">
+		<div class="top">
+			<div class="top-inner">
+				<div class="picture">
+					<img src="../images/wang-images/live.png">
+				</div>
+				<ul class="place">
+					<li class="yldd">北京</li>
+					<li class="ylqh">切换</li>
+				</ul>
+
+			<div class="bigbox1">
+				<div class="smallbox">
+					<p>全国：</p>
+				</div>
+				<ul class="biglist">
+					<li class="placeName" id="11">北京</li>
+			        <li class="placeName" id="12">天津</li>
+			        <li class="placeName" id="13">河北</li>
+			        <li class="placeName" id="14">山西</li>
+			        <li class="placeName" id="15">内蒙古</li>
+			        <li class="placeName" id="21">辽宁</li>
+			        <li class="placeName" id="22">吉林</li>
+			        <li class="placeName" id="23">黑龙江</li>
+			        <li class="placeName" id="31">上海</li>
+			        <li class="placeName" id="32">江苏</li>
+			        <li class="placeName" id="33">浙江</li>
+			        <li class="placeName" id="34">安徽</li>
+			        <li class="placeName" id="35">福建</li>
+			        <li class="placeName" id="36">江西</li>
+			        <li class="placeName" id="37">山东</li>
+			        <li class="placeName" id="41">河南</li>
+			        <li class="placeName" id="42">湖北</li>
+			        <li class="placeName" id="43">湖南</li>
+		            <li class="placeName" id="44">广东</li>
+	    	        <li class="placeName" id="45">广西</li>
+			        <li class="placeName" id="46">海南</li>
+			        <li class="placeName" id="50">重庆</li>
+			        <li class="placeName" id="51">四川</li>
+			        <li class="placeName" id="52">贵州</li>
+			        <li class="placeName" id="53">云南</li>
+			        <li class="placeName" id="54">西藏</li>
+			        <li class="placeName" id="61">陕西</li>
+			        <li class="placeName" id="62">甘肃</li>
+			        <li class="placeName" id="63">青海</li>
+			        <li class="placeName" id="64">宁夏</li>
+			        <li class="placeName" id="65">新疆</li>
+				</ul>
+			</div>
+
+
+
+
+
+
+
+
+
+				<div class="app">
+					<img src="../images/wang-images/phone.png">
+					<div class="app1">
+					<a href="" class="xzsja">下载手机APP</a>
+					</div>
+				</div>
+				<div class="lianxi">
+					<img src="../images/wang-images/qq.gif" class="tpqq">
+					<img src="../images/wang-images/sina.png" class="tp">
+					<div>
+					<a href="" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="dll">登录</a>
+					<a>|</a>
+					<a href="" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#itModal" id="zcc">注册</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="logonav">
+			<div class="logonav-inner">
+				<img src="../images/wang-images/logo.jpg">
+			
+				<div class="choice">
+					<ul>
+						<li><a href="">首页</a></li>
+						<li><a href="">目的地</a></li>
+						<li><a href="">线路</a></li>
+						<li><a href="">定制</a></li>
+						<li class="zijiatu"><a href="">自驾团</a></li>
+						<li><a href="">摄影</a></li>
+						<li><a href="">互动</a></li>
+						<li><a href="">精选</a></li>
+						<li><a href="">预定</a></li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+		<div class="banner">
+			<div class="buzhou">
+				<p>自驾团 > 境内 > 云南落地自驾行摄之旅 > 我要报名 > 填写订单</p>
+			</div>
+			<div class="juti">
+				<img src="../images/wang-images/juti.jpg">
+			</div>
+		</div>
+	</div>
+	<div id="main">
+		<div class="main1">
+			<div class="leftbox">
+				<div class="xianlu">
+					<div class="xinxi">
+						<p>线路信息</p>
+					</div>
+					<div class="xiugai">
+						<p>修改</p>
+					</div>
+				</div>
+				<div class="box1">
+					<p class="xianluming">线路名称:</p><span style="font-size:40px;">&nbsp&nbsp&nbsp&nbsp</span><p class="beijing">[北京出发]</p><p class="barentuan">经奢自驾八人小团：云南落地自驾行摄7日之旅</p>
+				</div>
+				<div class="box2">
+					<p class="chuyoushi">出游日期</p><p class="xing">*</p><p class="maohao">:</p><span style="font-size:20px;">&nbsp&nbsp</span><p class="shijianbiao">2016-01-17</p>
+				</div>
+				<div class="box3">
+					<p class="chengren">成人</p><p class="xing">*</p>
+					<p class="maohao">: </p><span>&nbsp&nbsp&nbsp&nbsp&nbsp</span><p class="jiage">1x￥5280</p>
+				</div>
+				<div class="box4">
+					<p class="ertong">儿童</p><p class="xing">*</p>
+					<p class="maohao">: </p>
+					<span>&nbsp&nbsp&nbsp&nbsp&nbsp</span><p class="jiage1">0x￥5280</p>
+				</div>
+				<div class="box5">
+					<p class="room">房间</p>
+					<p class="xing">*</p>
+					<p class="maohao">:</p>
+				<span style="font-size:20px;">&nbsp&nbsp&nbsp&nbsp</span>
+				<ul>
+					<li class="jian">-</li>
+					<li class="shuzi">1</li>
+					<li class="jia">+</li>
+				</ul>
+				<!-- <div>
+					<input type="button" value="-" class="jian">
+					<input type="text" value="1" class="shuzi">
+					<input type="button" value="+" class="jia">
+				</div> -->
+				<p class="jianshu">(2人间)</p>
+				</div>
+				<div class="box6">
+					<div class="shifor">
+						<p>是否同意拼房</p>
+						<p class="xing">*</p>
+						<p class="maohao">:</p>
+					</div>
+					<div class="bigbigbox">
+						<!-- <div class="pinfang">
+							
+							<div class="tongyi">
+								<input type="radio" class="toprad" value="1">
+								<span style="font-size:20px;">&nbsp</span>
+								<p >同意拼房</p>
+							</div>
+						</div>
+						<div class="butongyi">
+								<input type="radio" class="bottomrad" value="2">
+								<p >不同意拼房，愿意支付<strong>房差费用￥3500</strong></p>
+						</div> -->
+						<form class="form1" >
+							<input type="radio" name="name1" value=1>同意拼房<br><br>
+							<input type="radio" name="name1" value=2 >不同意拼房，愿意支付<strong>房差费用￥3500</strong>
+						</form>
+						<!-- < checked="checked" style="background-color:#f00;"/> -->
+					</div>
+				</div>
+			</div>
+			<div class="rightbox">
+				<ul class="list">
+					<li class="list1">订单信息<hr></li>
+					<li class="list2">成人<span>&nbsp&nbsp&nbsp&nbsp&nbsp</span>1×￥5280</li>
+					<li class="list3">房间×<span class="xsz">1</span><hr></li>
+					<li class="list4">意外旅游险<span style="font-size:17px;">&nbsp&nbsp</span>1×￥120<hr></li>
+					<li class="list5"><p class="yhje">优惠金额</p><p class="xiaoqian">-￥0</p>
+						</li>
+					<li class="list6"><hr><p class="zongji">总计</p></span><p class="qian1">￥</p><p class="qian">5400</p></li>
+				</ul>
+			</div>
+		</div>
+		<div class="main2">
+			<div class="shuoming">
+				<a href="" class="feiyong">费用说明</a>
+				<a href="" class="tggz">退改规则</a>
+			</div>
+			<ul>
+				<li><strong>费用包含：</strong></li>
+				<li>*+7×24小时优秀中/英双语自驾向导服务（国内出发，全程陪同）；</li>
+				<li>*+国内往返美国经济舱机票、燃油附加税、机票税； </li>
+				<li>*+包含好莱坞环球影城+17英里海岸门票；</li>
+				<li>*+美国当地钻酒店住宿</li>
+				<li><a href="">阅读全文</a></li>
+			</ul>
+		</div>
+		<div class="main3">
+			<div class="lxr">
+				<p>联系人信息</p>
+			</div>
+			<div class="box31">
+				<div class="box11">
+					<p class="xingming">姓名</p>
+					<p class="xing11">*</p>
+					<input type="text" value="" class="name11" placeholder="请输入姓名">
+				</div>
+				<div class="box12">
+					<p class="xingb">性别</p>
+					<!-- <input type="radio" class="anniu1">
+					<p class="nan">男</p>
+					<input type="radio" class="anniu2">
+					<p class="nv">女</p> -->
+					<form class="anniu1">
+						<input type="radio" name="name2" value="r1">男<span>&nbsp&nbsp&nbsp</span>
+						<input type="radio" name="name2" value="r1">女
+					</form>
+				</div>
+				<div class="box13">
+					<p class="phone">手机号码</p>
+					<p class="xing11">*</p>
+					<input type="text" value="" class="phone1" placeholder="请输入手机号码">
+				</div>
+				<div class="box14">
+					<p class="mail">邮箱</p>
+					<p class="xing1">*</p>
+					<input type="text" value="" class="mail1" placeholder="请输入邮箱">
+				</div>
+			</div>
+		</div>
+		<div class="main4">
+			<div class="yk">
+				<p class="ykxx">游客信息</p>
+				<input type="text" value="常用游客" class="tex11">
+			</div>
+			<div class="yk1">
+				<p class="yk11">游客1</p>
+			</div>
+			<div class="lk">
+				<p class="lklx">旅客类型</p>
+				<form class="form3">
+				<input type="radio" name="anniu3">
+				成人<span>&nbsp&nbsp</span>
+				<input type="radio" name="anniu3">
+				儿童
+				</form>
+			</div>
+			<div class="name3">
+				<p class="xingming1">姓名</p>
+				<p class="xing12">*</p>
+				<select class="name31">
+					<option value="1">中文</option>
+				</select>
+				<!-- <input type="text" value="" class="name31" placeholder="中文"> -->
+				<input type="text" value="" class="name32" placeholder="请输入姓名">
+			</div>
+			<div class="sex">
+				<p class="xingb1">性别</p>
+					<!-- <input type="radio" class="anniu5">
+					<p class="nan1">男</p>
+					<input type="radio" class="anniu6">
+					<p class="nv1">女</p> -->
+					<form class="anniu2">
+						<input type="radio" name="name3" value="r2">男<span>&nbsp&nbsp&nbsp</span>
+						<input type="radio" name="name3" value="r2">女
+					</form>
+			</div>
+			<div class="sjhm3">
+				<p class="phone5">手机号码</p>
+				<input type="text" value="" class="phone11" placeholder="请输入手机号">
+			</div>
+			<div class="zj">
+				<p class="xingming2">证件</p>
+				<p class="xing13">*</p>
+				<!-- <input type="text" value="" class="name41" placeholder="证件"> -->
+				<select class="name41" >
+					<option value="1">护照</option>
+					<option value="1">身份证</option>
+					<option value="1">户口本</option>
+				</select>
+				<input type="text" value="" class="name42" placeholder="证件号码" >
+			</div>
+			<input type="button" value="+添加游客" class="but">
+		</div>
+		<div class="main5">
+			<div class="bx">
+				<p class="bx1">保险</p>
+				<a href="" class="xq">详情></a>
+			</div>
+			<div class="bd">
+				<input type="checkbox" value="" class="tex1">
+				<p class="pa1">平安爱自驾境外长线保险</p>
+				<p class="pa2">经典型2份</p>
+				<p class="qy">￥177</p>
+				<p class="yf">/一份</p>
+			</div>
+			<div class="bd1">
+				<input type="checkbox" value="" class="tex2">
+				<p class="pa1">平安爱自驾境外长线保险</p>
+				<p class="pa2">经典型2份</p>
+				<p class="qy">￥177</p>
+				<p class="yf">/一份</p>
+			</div>
+		</div>
+		<div class="main6">
+			<div class="xd">
+				<p class="xdxx">预定信息</p>
+			</div>
+			<div class="fpxx">
+				<p class="fp">发票信息：</p>
+				<p class="fp1">是否需要发票：</p>
+				<form class="form4">
+				<input type="radio" value="r3" name="rad5">
+				男<span>&nbsp&nbsp&nbsp</span>
+				<input type="radio" value="r3" name="rad5">
+				女
+				</form>
+			</div>
+			<div class="ttx">
+				<p class="tt">发票抬头：</p>  
+				<input type="text" value="" class="fptt" placeholder="请输入发票抬头">
+			</div>
+			<div class="mxx">
+				<p class="mx">发票明细：</p>
+				<!-- <input type="text" value="" class="fpmx" placeholder="会议费"> -->
+				<select class="fpmx">
+					<option value="1">会议费</option>
+					<option value="1">住宿费</option>
+					<option value="1">导游费</option>
+				</select>
+			</div>
+			<div class="dzx">
+				<p class="dz">配送地址：</p>
+				<input type="text" value="" class="fpdz" placeholder="请输入配送地址">
+			</div>
+			<div class="gd">
+				<a href="">更多要求>></a>
+			</div>
+		</div>
+		<div class="main7">
+			<div class="xi">
+				<p class="jsmx">总价：<span class="jsmx0">1</span>×￥5280+1×￥120+1×￥170=<span class="jsmx1">￥<span class="jsmx2">5570</span></span></p>
+				<!-- <input type="text" value="总价：1×￥5280+1×￥120+1×￥170=" class="jsmx"> -->
+				<!-- <input type="text" value="￥5570" class="jsmx1"> -->
+			</div>
+			<div class="yuedu">
+				<div class="yydd">
+					<input type="checkbox" value="r5" class="check1">
+					<p class="yyd">已阅读爱自驾条款，并同意</p></div>
+					<a href="jun-2.html"><input type="button" value="确认订单并提交" class="butt"></a>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footer_top">
+			<div class="bottom1">
+				<ul>
+					<li><a href="">人民交通出版社</a></li>
+					<li><a href="">爱自驾</a></li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">友情链接</a></li>
+					<li><a href="">爱自驾品牌店</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<div class="beizhu">
+				<p class="chubanshe">人民交通出版社股份有限公司</p>
+				<p class="beihao">京ICP备15018898号-1</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	
+	<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min - w.js"></script>
+	
+	<script type="text/javascript">
+		$(".choice ul li").mouseenter(function(){
+			$(this).css("background-color","#50bbdb");
+			$(this).siblings().css("background-color","white");
+			$(".choice ul li").eq(4).css("background-color","#50bbdb");
+		})
+		$(".choice ul li").mouseleave(function(){
+			$(this).css("background-color","white");
+			$(".choice ul li").eq(4).css("background-color","#50bbdb");
+		})
+		$(".jian").click(function(){
+			if($(".shuzi").text()>0){
+				var result=Number($(".shuzi").text()); 
+				var result1=result-1;
+				$(".shuzi").text(result1);
+
+
+				$(".list3 span").text(result1);
+
+				 var signal=Number($(".shuzi").text());
+				 var sum=signal*5280+177;
+				 $(".qian").text(sum);
+				 $(".jsmx0").text(signal);
+				 var sum1=signal*5280+290;
+				 $(".jsmx2").text(sum1);
+
+			}
+		})
+		$(".jia").click(function(){
+			var result=Number($(".shuzi").text()); 
+			var result1=result+1;
+			$(".shuzi").text(result1);
+
+			$(".list3 span").text(result1);
+
+
+			var signal=Number($(".shuzi").text());
+			var sum=signal*5280+177;
+		 	$(".qian").text(sum);
+		 	$(".jsmx0").text(signal);
+			var sum1=signal*5280+290;
+			$(".jsmx2").text(sum1);
+
+		})
+	
+		
+		// $(".ylqh").click(function(){
+		// 	$(".bigbox1").toggle();
+			
+		// })方法一
+		var i=1;
+		$(".ylqh").click(function(){
+			
+			i++;
+			if(i%2==0){
+				$(".bigbox1").css("display","block");
+			}else{
+				$(".bigbox1").css("display","none");
+			}
+		})//方法二
+		
+
+		$(".tpqq").mouseenter(function(){
+			$(this).attr("src","../images/wang-images/qq-bulue.png")
+		})
+		$(".tpqq").mouseleave(function(){
+			$(this).attr("src","../images/wang-images/qq.gif")
+		})
+
+		$(".tp").mouseenter(function(){
+			$(this).attr("src","../images/wang-images/sina-blue.png")
+		})
+		$(".tp").mouseleave(function(){
+			$(this).attr("src","../images/wang-images/sina.png")
+		})
+
+		$(".ylqh").mouseenter(function(){
+			$(this).css("color","#50bbdb");
+		})
+		$(".ylqh").mouseleave(function(){
+			$(this).css("color","white");
+		})
+
+		$(".yldd").mouseenter(function(){
+			$(this).css("color","#50bbdb");
+		})
+		$(".yldd").mouseleave(function(){
+			$(this).css("color","white");
+		})
+
+
+
+		$(".xzsja").mouseenter(function(){
+			$(this).css("color","#50bbdb");
+		})
+		$(".xzsja").mouseleave(function(){
+			$(this).css("color","white");
+		})
+
+		$("#dll").mouseenter(function(){
+			$(this).css("color","#50bbdb");
+		})
+		$("#dll").mouseleave(function(){
+			$(this).css("color","white");
+		})
+		$("#zcc").mouseenter(function(){
+			$(this).css("color","#50bbdb");
+		})
+		$("#zcc").mouseleave(function(){
+			$(this).css("color","white");
+		})
+
+
+
+		$(".bigbox1 ul li").click(function(){
+			var zhi1=$(this).text();
+			$(".yldd").text(zhi1).css("color","#50bbdb");
+		})
+		
+	
+	</script>
+</body>
+</html>

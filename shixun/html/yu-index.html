@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/yu-style.css">
+	<link rel="stylesheet" type="text/css" href="../js/bootstrap.css">
+</head>
+<body>
+	
+	<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.cycle.all.js"></script>
+
+
+				<!-- <div class="dropdown">
+				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				    Dropdown
+				    <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+				    <li><a href="#">Action</a></li>
+				    <li><a href="#">Another action</a></li>
+				    <li><a href="#">Something else here</a></li>
+				    <li><a href="#">Separated link</a></li>
+				  </ul>
+				</div> -->
+
+
+
+	<div id="header">
+		<div id="bigbox">
+			<div id="box1">
+				<a href=""><img src="../images/yu-images/live.png" alt=""></a>
+				<ul class="list1">
+					<li class="chengshi">北京</li>					
+				<div class="dropdown">
+				  <li class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				    切换
+				  <span class="caret"></span>
+				  </li>
+				  	<div class="dropdown-menu" aria-labelledby="dropdownMenu1" style="width:706px;font-family:'微软雅黑';font-size:15px;">
+				  	<div style="float:left;width:46px;height:100px;color:#666;padding-top:3px;">全国:</div>
+				  	<div class="city">
+				  	<ul class="placeList">
+				  <li class="placeName" id="11">北京</li>
+		          <li class="placeName" id="12">天津</li>
+		          <li class="placeName" id="13">河北</li>
+		          <li class="placeName" id="14">山西</li>
+		          <li class="placeName" id="15">内蒙古</li>
+		          <li class="placeName" id="21">辽宁</li>
+		          <li class="placeName" id="22">吉林</li>
+		          <li class="placeName" id="23">黑龙江</li>
+		          <li class="placeName" id="31">上海</li>
+		          <li class="placeName" id="32">江苏</li>
+		          <li class="placeName" id="33">浙江</li>
+		          <li class="placeName" id="34">安徽</li>
+		          <li class="placeName" id="35">福建</li>
+		          <li class="placeName" id="36">江西</li>
+		          <li class="placeName" id="37">山东</li>
+		          <li class="placeName" id="41">河南</li>
+		          <li class="placeName" id="42">湖北</li>
+		          <li class="placeName" id="43">湖南</li>
+		          <li class="placeName" id="44">广东</li>
+		          <li class="placeName" id="45">广西</li>
+		          <li class="placeName" id="46">海南</li>
+		          <li class="placeName" id="50">重庆</li>
+		          <li class="placeName" id="51">四川</li>
+		          <li class="placeName" id="52">贵州</li>
+		          <li class="placeName" id="53">云南</li>
+		          <li class="placeName" id="54">西藏</li>
+		          <li class="placeName" id="61">陕西</li>
+		          <li class="placeName" id="62">甘肃</li>
+		          <li class="placeName" id="63">青海</li>
+		          <li class="placeName" id="64">宁夏</li>
+		          <li class="placeName" id="65">新疆</li>
+		          </ul>
+		          </div>
+				  </div>
+				</div>
+				</ul>
+			</div>
+			<div id="box2">
+				<a href=""><img src="../images/yu-images/phone.png" alt=""></a>
+				<a href="http://www.izijia.cn/app_down">下载手机APP</a>
+			</div>
+			<div id="box3">
+				<a href="https://graph.qq.com/oauth/show?which=ConfirmPage&display=pc&client_id=101245346&redirect_uri=http%3A%2F%2Fmember.izijia.cn%2Fqq_login.php&response_type=code&scope=get_user_info%2Cadd_share" ><img src="../images/yu-images/qq.gif" alt="" class="nav1"></a>
+				<a href="https://api.weibo.com/oauth2/authorize?client_id=1194106718&redirect_uri=http%3A%2F%2Fmember.izijia.cn%2F%2Findex.php%3Fs%3D%2Fhome%2Faddons%2Fexecute%2F_addons%2Fsync_login%2F_controller%2Fbase%2F_action%2Fcallback%2Ftype%2Fsina.html&response_type=code"><img src="../images/yu-images/sina.png" alt="" class="nav2"></a>
+					<ul class="list2">
+					<li data-toggle="modal" data-target="#myModal">
+					  登录
+					</li>
+					<!-- <li><a href="">登录</a></li> -->
+					<li>|</li>
+					<li data-toggle="modal" data-target="#dlModal">
+						注册
+					</li>
+				</ul>
+
+				
+			</div>
+		</div>
+	</div>
+	<div class="goheader">
+		<div class="bigbox1">
+			<div class="box4">
+			<img src="../images/yu-images/logo.jpg" alt="">
+			</div>
+			<ul class="list3">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">目的地</a></li>
+				<li><a href="#">路线</a></li>
+				<li><a href="#">定制</a></li>
+				<li><a href="#"><span>自驾团</span></li></a>
+				<li><a href="#">摄影</a></li>
+				<li><a href="#">活动</a></li>
+				<li><a href="#">精选</a></li>
+				<li><a href="#">预定</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="banner">
+		<ul class="picList">
+			<li><img src="../images/yu-images/xiaocar.jpg" alt=""></li>
+			<li><img src="../images/yu-images/xiaoche1.jpg" alt=""></li>
+		</ul>
+		
+	</div>
+	<div id="mid">
+		<div id="box5">
+			<div class="box6">
+			<input type="text" class="susuo" value="温泉">
+			<!-- <span class="glyphicon glyphicon-search" aria-hidden="true"></span> -->
+			<a href="page10.html"><input type="button" class="btn">
+			</div></a>
+			<ul class="list4">
+				<li>热门搜索：</li>
+				<li>北京</li>
+				<li>西安</li>
+				<li>天津</li>
+				<li>上海</li>
+				<li>杭州</li>
+				<li>青海</li>
+				<li>西藏</li>
+				<a href="page1.html"><li>南京</li></a>
+			</ul>
+		</div>
+	</div>
+	<div id="box6">
+		
+		<ul class="list5">
+			<li>首页</li>
+			<li>></li>  
+			<li>自驾团</li>
+			<li>></li> 
+			<li>自驾团领队详情页</li>
+		</ul>
+		<div id="box8">
+		<div class="box7"></div>
+		<p class="nav1">领队介绍</p>
+		</div>
+		<div id="box11">
+		<div id="box9">
+			<img src="../images/yu-images/lang.jpg" alt="">
+			<div class="box10">
+			<ul>
+				<li>中国自驾游联盟南京</li>
+				<li>站</li>
+			</ul>
+			</div>
+		</div>
+		<p> 自2005年开始，南京首家专业自驾车旅游公司——“中国自驾游联盟”，本着以城市为中心,以旅行社为龙头,以自驾游自助游为纽带的发展宗旨。通过强劲的发展，现已覆盖全国20个省200多个城市，总部设在南京，"在专业保障，旅游保险，特色活动，媒体支撑"的指导思想指引下，平均车友组织实施自驾旅游活动百余次，参加人员达到万人！近年来，我们策划与服务的自驾游车队达到400余个，参加车辆超过200两，参加车友近十万多次！我们的行程遍布了华南，华中，华北，西南西北20余省，区。并多次成功举办主题自驾活动，同时在尝试开闭国外自驾游市场，引导及推动中国自驾游的方向与潮流，赢得了广大的媒体与各路车会的支持的关注与信任，成为本地区自驾游最具有活力，最具有经验，最具有口碑的专业机构。</p>
+		</div>
+	</div>
+	<div id="box12">
+		<div class="box13"></div>
+		<p class="nav2">领队产品</p>
+	</div>
+	<div id="box14">
+		<ul class="list5">
+			<li class="yanse1">综合排序</li>
+		<li class="dropdown yanse">出发时间<img src="../images/yu-images/sanjiao.gif" alt="" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<ul class="dropdown-menu" aria-labelledby="dLabel">
+				<li>2016年4月15日</li>
+			    <li>2016年4月16日</li>
+			    <li>2016年4月20日</li>
+			    <li>2016年4月24日</li>
+			    <li>2016年4月30日</li>
+			</ul>
+		</li>
+
+
+		<li class="dropdown yanse">价格<img src="../images/yu-images/sanjiao.gif" alt="" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<ul class="dropdown-menu" aria-labelledby="dLabel">
+			    <li>1000-3000</li>
+			    <li>1220-2000</li>
+			    <li>1300-2100</li>
+			    <li>800-1300</li>
+			    <li>1020-3000</li> 
+			</ul>
+		</li>
+
+
+		<li class="dropdown yanse">天数<img src="../images/yu-images/sanjiao.gif" alt="" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<ul class="dropdown-menu" aria-labelledby="dLabel">
+			    <li>8天</li>
+			    <li>10天</li>
+			    <li>5天</li>
+			    <li>3天</li>
+			    <li>15天</li>
+			</ul>
+		</li>
+		</ul>
+
+
+		<ul class="list6">
+			<li class="daxiao1">共122个活动</li>
+			<li class="daxiao2"><span>1</span>/4</li>
+			<li class="daxiao3"><img src="../images/yu-images/zuosanjiao.gif" alt="" class="zuosanjiao"><img src="../images/yu-images/yousanjiao.gif" alt="" class="yousanjiao"></li>
+		</ul>
+
+	</div>
+
+	<div id="next">
+
+
+
+
+		<div class="go-on">
+			<div>
+				<img src="../images/yu-images/view/yunnan.jpg" alt="">
+			</div>
+			<ul class="list7">
+				<li class="a1">4580<span>起</span></li>
+				<li class="a2">2016-12-31出发</li>
+				<li class="a3">7天</li>
+			</ul>
+			<p class="nav3">昆明—建水—元阳·—元江—玉溪—东川</p>
+			<p class="nav4">壮美东川，光影元阳</p>
+			<div class="smb1">
+				<img src="../images/yu-images/ren.png" alt="">
+			</div>
+			<p class="nav5">中国自驾游联盟南京站</p>
+			<ul class="list8">
+				<li><img src="../images/yu-images/yanjing.png" class="pc"></li>
+				<li id="l">36</li>
+				<li><img src="../images/yu-images/shou.png" class="pic"></li>
+				<li id="s">0</li>
+			</ul>	
+			</div>
+
+
+			<div class="go-on1">
+			<div>
+				<img src="../images/yu-images/view/guangdong.jpg" alt="">
+			</div>
+			<ul class="list7">
+				<li class="a1">3680<span>起</span></li>
+				<li class="a2">2016-12-29出发</li>
+				<li class="a3">6天</li>
+			</ul>
+			<p class="nav6">广州—开平—番禺—深圳</p>
+			<p class="nav7">领略岭南风光，品味地道美食</p>
+			<div class="smb1">
+				<img src="../images/yu-images/ren.png" alt="">
+			</div>
+			<p class="nav5">中国自驾游联盟南京站</p>
+			<ul class="list8">
+				<li><img src="../images/yu-images/yanjing.png" class="pc"></li>
+				<li id="l">36</li>
+				<li><img src="../images/yu-images/shou.png" class="pic"></li>
+				<li id="s">0</li>
+			</ul>	
+			</div>
+
+
+
+			<div class="go-on2">
+			<div>
+				<img src="../images/yu-images/view/hulunbeier.jpg" alt="">
+			</div>
+			<ul class="list7">
+				<li class="a1">3880<span>起</span></li>
+				<li class="a2">2016-12-15出发</li>
+				<li class="a3">7天</li>
+			</ul>
+			<p class="nav8">海拉尔—呼和诺尔—冷极村—敖鲁古雅 冰雪</p>
+			<p class="nav9">领略岭南风光，品味地道美食</p>
+			<div class="smb1">
+				<img src="../images/yu-images/ren.png" alt="">
+			</div>
+			<p class="nav5">中国自驾游联盟南京站</p>
+			<ul class="list8">
+				<li><img src="../images/yu-images/yanjing.png" class="pc"></li>
+				<li id="l">36</li>
+				<li><img src="../images/yu-images/shou.png" class="pic"></li>
+				<li id="s">0</li>
+			</ul>	
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	<div id="next1">
+
+
+
+
+		<div class="go-on3">
+			<div>
+				<img src="../images/yu-images/view/caiyunzhinan.jpg" alt="">
+			</div>
+			<ul class="list7">
+				<li class="a1">11800<span>起</span></li>
+				<li class="a2">2016-09-03出发</li>
+				<li class="a3">25天</li>
+			</ul>
+			<p class="nav10"> 南京—重庆—普者黑—元阳—泸沽湖</p>
+			<p class="nav11">不一样的云南发现之旅</p>
+			<div class="smb1">
+				<img src="../images/yu-images/ren.png" alt="">
+			</div>
+			<p class="nav5">中国自驾游联盟南京站</p>
+			<ul class="list8">
+				<li><img src="../images/yu-images/yanjing.png" class="pc"></li>
+				<li id="l">36</li>
+				<li><img src="../images/yu-images/shou.png" class="pic"></li>
+				<li id="s">0</li>
+			</ul>	
+			</div>
+
+
+			<div class="go-on4">
+			<div>
+				<img src="../images/yu-images/view/putuoshan.jpg" alt="">
+			</div>
+			<ul class="list7">
+				<li class="a1">1280<span>起</span></li>
+				<li class="a2">2016-03-08出发</li>
+				<li class="a3">3天</li>
+			</ul>
+			<p class="nav12">南京—朱家尖—普陀山—宁波</p>
+			<p class="nav13">海天佛国，南海圣境</p>
+			<div class="smb1">
+				<img src="../images/yu-images/ren.png" alt="">
+			</div>
+			<p class="nav5">中国自驾游联盟南京站</p>
+			<ul class="list8">
+				<li><img src="../images/yu-images/yanjing.png" class="pc"></li>
+				<li id="l">36</li>
+				<li><img src="../images/yu-images/shou.png" class="pic"></li>
+				<li id="s">0</li>
+			</ul>	
+			</div>
+
+
+
+			<div class="go-on5">
+			<div>
+				<img src="../images/yu-images/view/guangxi.jpg" alt="">
+			</div>
+			<ul class="list7">
+				<li class="a1">4680<span>起</span></li>
+				<li class="a2">2016-07-12出发</li>
+				<li class="a3">12天</li>
+			</ul>
+			<p class="nav14">南京—桂林—凭祥—北海—阳朔</p>
+			<p class="nav15">尽情领略广西风光，深入体验中越边关风采。</p>
+			<div class="smb1">
+				<img src="../images/yu-images/ren.png" alt="">
+			</div>
+			<p class="nav5">中国自驾游联盟南京站</p>
+			<ul class="list8">
+				<li><img src="../images/yu-images/yanjing.png" class="pc"></li>
+				<li id="l">36</li>
+				<li><img src="../images/yu-images/shou.png" class="pic"></li>
+				<li id="s">0</li>
+			</ul>	
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<div id="next2">
+
+
+
+
+		<div class="go-on6">
+			<div>
+				<img src="../images/yu-images/view/qiandong.jpg" alt="">
+			</div>
+			<ul class="list7">
+				<li class="a1">4580<span>起</span></li>
+				<li class="a2">2016-06-21出发</li>
+				<li class="a3">12天</li>
+			</ul>
+			<p class="nav16"> 南京—西江—黄果树—荔波—桂林</p>
+			<p class="nav17">返璞归真，回归自然。</p>
+			<div class="smb1">
+				<img src="../images/yu-images/ren.png" alt="">
+			</div>
+			<p class="nav5">中国自驾游联盟南京站</p>
+			<ul class="list8">
+				<li><img src="../images/yu-images/yanjing.png" class="pc"></li>
+				<li id="l">36</li>
+				<li><img src="../images/yu-images/shou.png" class="pic"></li>
+				<li id="s">0</li>
+			</ul>	
+			</div>
+
+
+			<div class="go-on7">
+			<div>
+				<img src="../images/yu-images/view/chenxi.jpg" alt="">
+			</div>
+			<ul class="list7">
+				<li class="a1">3580<span>起</span></li>
+				<li class="a2">2016-05-21出发</li>
+				<li class="a3">8天</li>
+			</ul>
+			<p class="nav18">昆明—丽江—香格里拉—大理</p>
+			<p class="nav19">最经典滇西北行程，体验梦中的香格里拉。</p>
+			<div class="smb1">
+				<img src="../images/yu-images/ren.png" alt="">
+			</div>
+			<p class="nav5">中国自驾游联盟南京站</p>
+			<ul class="list8">
+				<li><img src="../images/yu-images/yanjing.png" class="pc"></li>
+				<li id="l">36</li>
+				<li><img src="../images/yu-images/shou.png"  class="pic"></li>
+				<li id="s">0</li>
+			</ul>	
+			</div>
+
+
+
+			<div class="go-on8">
+			<div>
+				<img src="../images/yu-images/view/shuye.jpg" alt="">
+			</div>
+			<ul class="list7">
+				<li class="a1">3580<span>起</span></li>
+				<li class="a2">2016-04-16出发</li>
+				<li class="a3">8天</li>
+			</ul>
+			<p class="nav20">成都—普洱—望天树—傣族园—抚仙湖</p>
+			<p class="nav21">大理双廊洱海、腾冲银杏</p>
+			<div class="smb1">
+				<img src="../images/yu-images/ren.png" alt="">
+			</div>
+			<p class="nav5">中国自驾游联盟南京站</p>
+			<ul class="list8">
+				<li><img src="../images/yu-images/yanjing.png" class="pc"></li>
+				<li id="l">36</li>
+				<li><img src="../images/yu-images/shou.png" class="pic"></li>
+				<li id="s">0</li>
+			</ul>	
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+		<div id="next3">
+
+
+
+
+		<div class="go-on9">
+			<div>
+				<img src="../images/yu-images/view/ejinaqi.jpg" alt="">
+			</div>
+			<ul class="list7">
+				<li class="a1">3680<span>起</span></li>
+				<li class="a2">2016-04-11出发</li>
+				<li class="a3">10天</li>
+			</ul>
+			<p class="nav22">重庆—西安—额济纳旗—张掖—天水</p>
+			<p class="nav23">国庆专辑—终极完美金秋额济纳旗环线自驾</p>
+			<div class="smb1">
+				<img src="../images/yu-images/ren.png" alt="">
+			</div>
+			<p class="nav5">中国自驾游联盟南京站</p>
+			<ul class="list8">
+				<li><img src="../images/yu-images/yanjing.png" class="pc"></li>
+				<li id="l">36</li>
+				<li><img src="../images/yu-images/shou.png" class="pic"></li>
+				<li id="s">0</li>
+			</ul>	
+			</div>
+
+
+			<div class="go-on10">
+			<div>
+				<img src="../images/yu-images/view/nanjiang.jpg" alt="">
+			</div>
+			<ul class="list7">
+				<li class="a1">1280<span>起</span></li>
+				<li class="a2">2016-03-21出发</li>
+				<li class="a3">3天</li>
+			</ul>
+			<p class="nav24">成都—南江—光雾山—南江—成都</p>
+			<p class="nav25">一方神奇秀丽的自然山水</p>
+			<div class="smb1">
+				<img src="../images/yu-images/ren.png" alt="">
+			</div>
+			<p class="nav5">中国自驾游联盟南京站</p>
+			<ul class="list8">
+				<li><img src="../images/yu-images/yanjing.png" class="pc"></li>
+				<li id="l">36</li>
+				<li><img src="../images/yu-images/shou.png"  class="pic"></li>
+				<li id="s">0</li>
+			</ul>	
+			</div>
+
+
+
+			<div class="go-on11">
+			<div>
+				<img src="../images/yu-images/view/langya1.jpg" alt="">
+			</div>
+			<ul class="list7">
+				<li class="a1">1580<span>起</span></li>
+				<li class="a2">2016-03-11出发</li>
+				<li class="a3">4天</li>
+			</ul>
+			<p class="nav26">北京—台儿庄—琅琊台—东营—北京</p>
+			<p class="nav27">寻梦琅琊，探秘琅琊台</p>
+			<div class="smb1">
+				<img src="../images/yu-images/ren.png" alt="">
+			</div>
+			<p class="nav5">中国自驾游联盟南京站</p>
+			<ul class="list8">
+				<li><img src="../images/yu-images/yanjing.png"  class="pc"></li>
+				<li id="l">36</li>
+				<li><img src="../images/yu-images/shou.png" class="pic"></li>
+				<li id="s">0</li>
+			</ul>	
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+		<div id="next4">
+
+
+
+
+		<div class="go-on12">
+			<div>
+				<img src="../images/yu-images/view/changbaishan.jpg" alt="">
+			</div>
+			<ul class="list7">
+				<li class="a1">4580<span>起</span></li>
+				<li class="a2">2016-02-26出发</li>
+				<li class="a3">9天</li>
+			</ul>
+			<p class="nav28">北京—长白山—敦化—雪乡—哈尔滨</p>
+			<p class="nav29">梦幻雪乡，北国童话</p>
+			<div class="smb1">
+				<img src="../images/yu-images/ren.png" alt="">
+			</div>
+			<p class="nav5">中国自驾游联盟南京站</p>
+			<ul class="list8">
+				<li><img src="../images/yu-images/yanjing.png" class="pc"></li>
+				<li id="l">36</li>
+				<li><img src="../images/yu-images/shou.png" class="pic"></li>
+				<li id="s">0</li>
+			</ul>	
+			</div>
+
+
+			<div class="go-on13">
+			<div>
+				<img src="../images/yu-images/view/chaganhu.jpg" alt="">
+			</div>
+			<ul class="list7">
+				<li class="a1">3280<span>起</span></li>
+				<li class="a2">2016-02-20出发</li>
+				<li class="a3">6天</li>
+			</ul>
+			<p class="nav30">北京—松原市—雾凇岛—雪谷—雪乡</p>
+			<p class="nav31">体验如同童话世界一样的美景</p>
+			<div class="smb1">
+				<img src="../images/yu-images/ren.png" alt="">
+			</div>
+			<p class="nav5">中国自驾游联盟南京站</p>
+			<ul class="list8">
+				<li><img src="../images/yu-images/yanjing.png" class="pc"></li>
+				<li id="l">36</li>
+				<li><img src="../images/yu-images/shou.png" class="pic"></li>
+				<li id="s">0</li>
+			</ul>	
+			</div>
+
+
+
+			<div class="go-on14">
+			<div>
+				<img src="../images/yu-images/view/huangguoshu.jpg" alt="">
+			</div>
+			<ul class="list7">
+				<li class="a1">2580<span>起</span></li>
+				<li class="a2">2016-02-11出发</li>
+				<li class="a3">6天</li>
+			</ul>
+			<p class="nav32">成都—遵义—贵阳—黄果树—赤水</p>
+			<p class="nav33">黄果树、南江大峡谷、龙宫、赤水</p>
+			<div class="smb1">
+				<img src="../images/yu-images/ren.png" alt="">
+			</div>
+			<p class="nav5">中国自驾游联盟南京站</p>
+			<ul class="list8">
+				<li><img src="../images/yu-images/yanjing.png" class="pc"></li>
+				<li id="l">36</li>
+				<li><img src="../images/yu-images/shou.png"  class="pic"></li>
+				<li id="s">0</li>
+			</ul>	
+			</div>
+
+		</div>
+
+
+
+
+
+
+		<div id="next5">
+
+
+
+
+		<div class="go-on15">
+			<div>
+				<img src="../images/yu-images/view/jiuzhaigou.jpg" alt="">
+			</div>
+			<ul class="list7">
+				<li class="a1">1880<span>起</span></li>
+				<li class="a2">2016-02-11出发</li>
+				<li class="a3">5天</li>
+			</ul>
+			<p class="nav34">重庆—广元—文县—九寨沟—都江堰</p>
+			<p class="nav35">走进童话冰雪世界</p>
+			<div class="smb1">
+				<img src="../images/yu-images/ren.png" alt="">
+			</div>
+			<p class="nav5">中国自驾游联盟南京站</p>
+			<ul class="list8">
+				<li><img src="../images/yu-images/yanjing.png" class="pc"></li>
+				<li id="l">36</li>
+				<li><img src="../images/yu-images/shou.png" class="pic"></li>
+				<li id="s">0</li>
+			</ul>	
+			</div>
+
+
+			<div class="go-on16">
+			<div>
+				<img src="../images/yu-images/view/hainan.jpg" alt="">
+			</div>
+			<ul class="list7">
+				<li class="a1">3980<span>起</span></li>
+				<li class="a2">2016-01-11出发</li>
+				<li class="a3">7天</li>
+			</ul>
+			<p class="nav36">海口—文昌—海棠湾—三亚—乐东</p>
+			<p class="nav37">深度环岛自驾体验</p>
+			<div class="smb1">
+				<img src="../images/yu-images/ren.png" alt="">
+			</div>
+			<p class="nav5">中国自驾游联盟南京站</p>
+			<ul class="list8">
+				<li><img src="../images/yu-images/yanjing.png" class="pc"></li>
+				<li id="l">36</li>
+				<li><img src="../images/yu-images/shou.png" class="pic"></li>
+				<li id="s">0</li>
+			</ul>	
+			</div>
+
+
+
+			<div class="go-on17">
+			<div>
+				<img src="../images/yu-images/view/bipenggou.jpg" alt="">
+			</div>
+			<ul class="list7">
+				<li class="a1">1580<span>起</span></li>
+				<li class="a2">2016-11-16出发</li>
+				<li class="a3">4天</li>
+			</ul>
+			<p class="nav38">成都—米亚罗—古尔沟—毕棚沟</p>
+			<p class="nav39">中国最大的红叶观赏区</p>
+			<div class="smb1">
+				<img src="../images/yu-images/ren.png" alt="">
+			</div>
+			<p class="nav5">中国自驾游联盟南京站</p>
+			<ul class="list8">
+				<li><img src="../images/yu-images/yanjing.png" class="pc"></li>
+				<li id="l">36</li>
+				<li><img src="../images/yu-images/shou.png" class="pic"></li>
+				<li id="s">0</li>
+			</ul>	
+			</div>
+
+		</div>
+
+
+		<div id="footer1">
+			<ul class="list9">
+				<li><<</li>
+				<li><</li>
+				<a href="page8.html"><li>1</li></a>
+				<a href="page1.html"><li>2</li></a>
+				<a href="page13.html"><li>3</li></a>
+				<li>4</li>
+				<a href="page8.html"><li>></li></a>
+				<li>>></li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+
+		<div id="footer2">
+		 		<ul>
+		 			<li><span>人民交通出版社</span></li>
+		 			<li><span>爱自驾</span></li>
+		 			<li><span>联系我们</span></li>
+		 			<li><span>友情链接</span></li>
+		 			<li><span>爱自驾品牌店</span></li>
+		 		</ul>
+		</div>
+
+		<div id="footer3">
+			<ul>
+				<li>人民交通出版社股份有限公司</li>
+				<li>京ICP备15018898号-1</li>
+			</ul>
+		</div>
+					
+
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+
+				    	<div class="bigmodal">
+				    		<div class="modal-header">
+				    			 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				    		<img src="../images/yu-images/aizijialogo.jpg" alt="" class="aizijia">
+				    		<!-- <img src="../images/yu-images/cha.gif" alt="" class="cha"> -->
+				    		<input type="text" class="txt1" placeholder="邮箱/手机/用户名">
+				    		<input type="password" class="txt2" placeholder="密码">
+				    		<a href="gerenzhongxinyemian.html"><input type="button" class="btn" value="登录"></a>
+				    		<div class="midmodal">
+				    		<p class="p1">忘记密码</p>
+				    		<p class="p2">还没有账号？免费注册</p>
+				    		</div>
+				    		<img src="../images/yu-images/qita.gif" alt="" class="qita">
+				    		<input type="button" class="btn btn1" value="不登录，直接报名>">
+				    	</div>
+				    	</div>
+				     
+				    </div>
+				  </div>
+				</div>
+
+				
+
+				<div class="modal fade" id="dlModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+						<div class="midmodal">
+							<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<img src="../images/yu-images/aizijialogo.jpg" alt="" class="aizijia">
+							<!-- <img src="../images/yu-images/cha.gif" alt="" class="cha"> -->
+							<p class="p3">用手机注册</p>
+							<input type="text" class="txt3" placeholder="请输出邮箱">
+				    		<input type="text" class="txt4" placeholder="用户名,4-16个字符,字母/中文/数字">
+				    		<input type="text" class="txt5" placeholder="设置密码">
+				    		<input type="text" class="txt6" placeholder="输入密码">
+				    		<input type="text" class="txt7" placeholder="输入邀请码，可不填">
+				    		<div class="smmodal">
+				    			<p class="p4">注册视为同意<span>《爱自驾用户使用协议》</span></p>
+				    			<input type="button" class="btn btn2" value="注册">
+				    			<img src="../images/yu-images/qita.gif" alt="" class="qita1">
+				    		</div>
+				    		<input type="button" class="btn btn3" value="快速登录>">
+				    		</div>
+						</div>
+
+
+					 </div>
+				  </div>
+				</div>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.leanModal.min.js"></script>
+<script type="text/javascript">
+		$(".picList").cycle();
+		var reg1 =  /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/
+		$(".txt3").blur(function(){
+			var val = $(this).val();
+			var result = reg1.test(val);
+			var $span = $("<span1></span1>")//span前面加$是创建一个对象
+			$(".modal-header").append($span)
+			if(result){
+
+				$span.addClass("green")
+				$span.text("验证通过")
+				$(".red").css("display","none")
+					
+			}else{
+					
+				$span.addClass("red")
+				$span.text("验证失败")
+				$(".green").css("display","none")		
+			}
+		})
+
+
+		var reg2 =  /^([a-zA-Z0-9]{4,16})$/
+		$(".txt4").blur(function(){
+			var val = $(this).val();
+			var result = reg2.test(val);
+			var $span = $("<span1></span1>")//span前面加$是创建一个对象
+			$(".modal-header").append($span)
+			if(result){
+				$span.addClass("green1")
+				$span.text("验证通过")
+				$(".red1").css("display","none")				
+			}else{					
+				$span.addClass("red1")
+				$span.text("验证失败")
+				$(".green1").css("display","none")		
+			}
+		})
+		$(".yousanjiao").click(function(){
+			var val = $(".daxiao2 span").text();
+			console.log(val);
+			if(val<4){
+				val++
+				$(".daxiao2 span").text(val);
+			}
+		})
+		$(".zuosanjiao").click(function(){
+			var val = $(".daxiao2 span").text();
+			console.log(val);
+			if( val != 5){
+				val--
+				$(".daxiao2 span").text(val);
+			}
+		})
+		$(".zuosanjiao").click(function(){
+			var val = $(".daxiao2 span").text();
+			if(val == 0){
+				val++
+				$(".daxiao2 span").text(val);
+			}
+
+		})
+		$(".pic").click(function(){
+			var val = $(this).parent().next().text()
+			if(val == 0){
+				val++
+				$(this).attr("src","../images/yu-images/niu.jpg")
+			}else{
+				val--
+				$(this).attr("src","../images/yu-images/shou.png")
+			}
+			$(this).parent().next().text(val);
+
+		})
+		$(".pc").click(function(){
+			var val = $(this).parent().next().text();
+			if(val == 36){
+				val++
+				$(this).attr("src","../images/yu-images/yanjing1.png")
+			}else{
+				val--
+				$(this).attr("src","../images/yu-images/yanjing.png")
+			}
+			$(this).parent().next().text(val);
+
+		})
+
+
+
+		$(".palceList li").click(function(){
+			var val = $(this).text();
+			console.log(val)
+			$(".chengshi").text(val)
+		})
+		
+	</script>
+
+
+
+
+
+
+
+	
+</body>
+</html>

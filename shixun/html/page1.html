@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" type="text/css" href="../images/liu-images/aizijia.ico">
+	<title>自驾团</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/page1.css">
+	<link rel="stylesheet" type="text/css" href="../css/modal-login.css">
+	<link rel="stylesheet" type="text/css" href="../css/modal-loginup.css">
+</head>
+<body>
+	<!-- Modal start-->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  	<div class="modal-dialog" role="document">
+		    <div class="modal-content">
+				<div class="login">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<div class="login-header">
+						<div class="login-pic"><img src="../images/liu-images/login.png" alt=""></div>
+					</div>
+					<div class="login-container">
+						<div class="login-content1">
+							<div class="con1">
+								<input type="text" class="login-txt" placeholder="邮箱/手机/用户名">
+								<span class="yanzheng"></span>
+							</div>
+							<div class="con1">
+								<input type="text" class="login-txt1" placeholder="密码">
+								<span class="yanzheng1"></span>
+							</div>
+							<div class="con2">
+								<input type="submit" class="login-btn" value="登录">
+							</div>
+
+						</div>
+						<div class="login-content2">
+							<div class="con3">
+								<p class="login-password">忘记密码</p>
+								<p class="login-up"><span>还没有账号？</span>免费注册</p>
+							</div>
+							<div class="con4">
+								<div class="con4_1">
+
+								</div>
+								<div class="con4_2">
+									<p>其他报名方式</p>
+								</div>
+								<div class="con4_1">
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="login-footer">
+						<input type="submit" value="不登陆，直接报名>" class="login-btn2">
+					</div>
+				</div>
+		    </div>
+		</div>
+	</div>
+	<!-- modal end-->
+
+	<div id="header">
+		<div class="top">
+			<div class="top-nav">
+				<ul class="top1">
+					<li class="top1-font"><img src="../images/liu-images/live.png" alt="无法加载图片"></li>
+					<li class="top1-font1"><a href="#">北京</a></li>
+					<li class="top1-font2">
+						<a href="#">切换</a>
+					</li>
+				</ul>
+				<div class="dingwei">
+				<div class="top1-dingwei">
+					<ul class="dingwei1">
+						全国:
+					</ul>
+					<ul class="dingwei2">
+						<li>北京</li>
+						<li>天津</li>
+						<li>河北</li>
+						<li>山西</li>
+						<li>内蒙古</li>
+						<li>辽宁</li>
+						<li>吉林</li>
+						<li>黑龙江</li>
+						<li>上海</li>
+						<li>江苏</li>
+						<li>浙江</li>
+						<li>安徽</li>
+						<li>福建</li>
+						<li>江西</li>
+						<li>山东</li>
+						<li>河南</li>
+						<li>湖北</li>
+						<li>湖南</li>
+						<li>广东</li>
+						<li>广西</li>
+						<li>海南</li>
+						<li>重庆</li>
+						<li>四川</li>
+						<li>贵州</li>
+						<li>云南</li>
+						<li>西藏</li>
+						<li>陕西</li>
+						<li>甘肃</li>
+						<li>青海</li>
+						<li>宁夏</li>
+						<li>西藏</li>
+					</ul>
+				</div>
+			</div>
+				<ul class="top2">
+					<li class="top2-pic"><img src="../images/liu-images/phone.png" alt="无法加载图片"></li>
+					<li class="top2-font"><a href="#">下载手机APP</a></li>
+				</ul>
+				<ul class="top3">
+					<li class="top3-qq"><a href="#"><img src="../images/liu-images/qq.gif" alt="无法加载图片"></a></li>
+					<li class="top3-pic"><a href="#"><img src="../images/liu-images/sina.png" alt="无法加载图片"></a></li>
+					<li class="top3-font1"><a href="#myModal">登录 </a><span>|</span></li>
+					<li class="top3-font2"><a href="#dlmodal">注册</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="logo">
+			<div class="logo1"><img src="../images/liu-images/logo.jpg" alt="无法加载图片"></div>
+			<ul class="m-nav">
+				<li class="beactive"><a href="">首页</a></li>
+				<li class="beactive"><a href="">目的地</a></li>
+				<li class="beactive"><a href="">线路</a></li>
+				<li class="beactive"><a href="">订制</a></li>
+				<li class="active"><a href="">自驾团</a></li>
+				<li class="beactive"><a href="">摄影</a></li>
+				<li class="beactive"><a href="">互动</a></li>
+				<li class="beactive"><a href="">精选</a></li>
+				<li class="beactive"><a href="">预订</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="container">
+		<div class="search">
+			<ul class="search-top">
+				<li>首页</li>
+				<li><span>></span></li>
+				<li><span>自驾团</span></li>
+				<li><span>></span></li>
+				<li><span>自驾团境内</span></li>
+				<li><span>></span></li>
+				<li><span>南京</span></li>
+			</ul>
+			<div class="search-banner">
+				<input type="text" value="南京" id="txt">
+			</div>
+			<div class="search-bg"></div>
+			<ul class="hot-search">
+				<li>热门搜索:</li>
+				<li><a href="#">北京</a></li>
+				<li><a href="#">西安</a></li>
+				<li><a href="#">天津</a></li>
+				<li><a href="#">上海</a></li>
+				<li><a href="#">杭州</a></li>
+				<li><a href="#">青海</a></li>
+				<li><a href="#">西藏</a></li>
+				<li><a href="#">云南</a></li>
+			</ul>
+		</div>
+		<div class="select">
+			<ul class="select-list1">
+				<li>全部城市</li>
+				<li>
+					<span class="city1"><a href="#">全部</a></span>
+					<span><a href="#">北京</a></span>
+					<span><a href="#">昆明</a></span>
+					<span><a href="#">丽江</a></span>
+					<span><a href="#">天津</a></span>
+					<span><a href="#">当地</a></span>
+					<span><a href="#">成都</a></span>
+					<span><a href="#">广州</a></span>
+					<span><a href="#">郑州</a></span>
+					<span><a href="#">长沙</a></span>
+					<span><a href="#">呼和浩特</a></span>
+					<span><a href="#">上海</a></span>
+				</li>
+				<li class="more"><a href="">更多</a></li>
+				<li><span><a href="#">V</a></span></li>
+			</ul>
+			<ul class="select-list2">
+				<li>行程天数</li>
+				<li>
+					<span class="city1"><a href="#">1-3天</a></span>
+					<span><a href="#">3-7天</a></span>
+					<span><a href="#">7-10天</a></span>
+					<span><a href="#">10-15天</a></span>
+					<span><a href="#">15天+</a></span>
+				</li>
+			</ul>
+			<ul class="select-list3">
+				<li>出行时间</li>
+				<li>
+					<span class="city1 sunday"><a href="#">周末</a></span>
+					<span><a href="#">元旦</a></span>
+					<span><a href="#">春节</a></span>
+					<span><a href="#">清明</a></span>
+					<span><a href="#">五一</a></span>
+					<span><a href="#">端午</a></span>
+					<span><a href="#">中秋</a></span>
+					<span><a href="#">国庆</a></span>
+					<span><a href="#">一月</a></span>
+					<span><a href="#">二月</a></span>
+					<span><a href="#">三月</a></span>
+					<span><a href="#">四月</a></span>
+					<span><a href="#">五月</a></span>
+					<span><a href="#">六月</a></span>
+					<span><a href="#">七月</a></span>
+				</li>
+				<li class="more"><a href="">更多</a></li>
+				<li><span><a href="">V</a></span></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="content-head">
+				<ul class="head1">
+					<li class="head_1">综合排序</li>
+					<li class="head_2">
+						<select>
+							<option value="出发时间">出发时间</option>
+							<option value="">清明</option>
+							<option value="">五一</option>
+							<option value="">端午</option>
+						</select>
+					</li>
+
+					<li class="head_3">
+
+						<select>
+							<option value="价格">价格</option>
+							<option value="">不限</option>
+							<option value="">1000以内</option>
+							<option value="">2000以内</option>
+							<option value="">6000以内</option>
+						</select>
+					</li>
+					<li class="head_4">
+
+						<select>
+							<option value="价格">天数</option>
+							<option value="">3天</option>
+							<option value="">5天</option>
+							<option value="">7天</option>
+						</select>
+					</li>
+					<div class="clear1"></div>
+				</ul>
+				<ul class="head2">
+					<li><span class="head2_span">共122个活动</span></li>
+					<li><span class="head2_span"><span class="one">1</span>/4</span></li>
+					<li class="head2_1"><a href="#"><</a></li>
+					<li class="head2_2"><a href="#">></a></li>
+				</ul>
+			</div>
+			<div class="content1">
+				<div class="content-list1">
+					<div class="content1-pic"></div>
+					<ul class="price_date">
+						<li class="price">11800<span>起</span></li>
+						<li class="date">
+							2016-11-03出发
+						</li>
+						<li class="days">
+							25天
+						</li>
+					</ul>
+					<ul class="introduce">
+						<li class="introduce-list1">南京—重庆—普者黑—元阳—泸沽湖
+						</li>
+						<li class="introduce-list2">
+							不一样的云南发现之旅
+						</li>
+						<li class="introduce-list3">
+							<div class="introduce-list3_1">
+								<img src="../images/liu-images/ren.png" alt="无法加载图片">
+								<span>中国自驾游联盟南京站</span>
+							</div>
+							<ul class="introduce-list3_2">
+								<li>
+									<img src="../images/liu-images/yanjing.png">36
+								</li>
+								<li class="shou">
+									<img src="../images/liu-images/shou.png"><span>0</span>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="content-list2">
+					<div class="content1-pic1"></div>
+					<ul class="price_date">
+						<li class="price">1280<span>起</span></li>
+						<li class="date">
+							2016-11-01出发
+						</li>
+						<li class="days">
+							3天
+						</li>
+					</ul>
+					<ul class="introduce">
+						<li class="introduce-list1">南京—朱家尖—普陀山—宁波
+						</li>
+						<li class="introduce-list2">
+							海天佛国，南海圣境
+						</li>
+						<li class="introduce-list3">
+							<div class="introduce-list3_1">
+								<img src="../images/liu-images/ren.png" alt="无法加载图片">
+								<span>中国自驾游联盟南京站</span>
+							</div>
+							<ul class="introduce-list3_2">
+								<li><img src="../images/liu-images/yanjing.png"><span>36</span></li>
+								<li class="shou"><img src="../images/liu-images/shou.png"><span>0</span></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="content-list3">
+					<div class="content1-pic2"></div>
+					<ul class="price_date">
+						<li class="price">4680<span>起</span></li>
+						<li class="date">
+							2016-10-12出发
+						</li>
+						<li class="days">
+							12天
+						</li>
+					</ul>
+					<ul class="introduce">
+						<li class="introduce-list1">南京—桂林—凭祥—北海—阳朔
+						</li>
+						<li class="introduce-list2">
+							尽情领略广西风光，深入体验中越边关风采
+						</li>
+						<li class="introduce-list3">
+							<div class="introduce-list3_1">
+								<img src="../images/liu-images/ren.png" alt="无法加载图片">
+								<span>中国自驾游联盟南京站</span>
+							</div>
+							<ul class="introduce-list3_2">
+								<li><img src="../images/liu-images/yanjing.png"><span>36</span></li>
+								<li class="shou"><img src="../images/liu-images/shou.png"><span>0</span></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="content2">
+				<div class="content-list1">
+					<div class="content2-pic1"></div>
+					<ul class="price_date">
+						<li class="price">4580<span>起</span></li>
+						<li class="date">
+							2016-10-07出发
+						</li>
+						<li class="days">
+							7天
+						</li>
+					</ul>
+					<ul class="introduce">
+						<li class="introduce-list1">南京—建水—元阳—元江—玉溪—东川
+						</li>
+						<li class="introduce-list2">
+							壮美东川，光影元阳
+						</li>
+						<li class="introduce-list3">
+							<div class="introduce-list3_1">
+								<img src="../images/liu-images/ren.png" alt="无法加载图片">
+								<span>中国自驾游联盟南京站</span>
+							</div>
+							<ul class="introduce-list3_2">
+								<li><img src="../images/liu-images/yanjing.png"><span>36</span></li>
+								<li class="shou"><img src="../images/liu-images/shou.png"><span>0</span></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="content-list2">
+					<div class="content2-pic2"></div>
+					<ul class="price_date">
+						<li class="price">4580<span>起</span></li>
+						<li class="date">
+							2016-9-21出发
+						</li>
+						<li class="days">
+							12天
+						</li>
+					</ul>
+					<ul class="introduce">
+						<li class="introduce-list1">南京—西江—黄果树—荔波—桂林
+						</li>
+						<li class="introduce-list2">
+							返璞归真，回归自然
+						</li>
+						<li class="introduce-list3">
+							<div class="introduce-list3_1">
+								<img src="../images/liu-images/ren.png" alt="无法加载图片">
+								<span>中国自驾游联盟南京站</span>
+							</div>
+							<ul class="introduce-list3_2">
+								<li><img src="../images/liu-images/yanjing.png"><span>36</span></li>
+								<li class="shou"><img src="../images/liu-images/shou.png"><span>0</span></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="content-list3">
+					<div class="content2-pic3"></div>
+					<ul class="price_date">
+						<li class="price">3880<span>起</span></li>
+						<li class="date">
+							2016-8-30出发
+						</li>
+						<li class="days">
+							7天
+						</li>
+					</ul>
+					<ul class="introduce">
+						<li class="introduce-list1">呼和诺尔—冷极村—敖鲁古雅冰雪
+						</li>
+						<li class="introduce-list2">
+							冰雪盛宴，冬季那达慕
+						</li>
+						<li class="introduce-list3">
+							<div class="introduce-list3_1">
+								<img src="../images/liu-images/ren.png" alt="无法加载图片">
+								<span>中国自驾游联盟南京站</span>
+							</div>
+							<ul class="introduce-list3_2">
+								<li><img src="../images/liu-images/yanjing.png"><span>36</span></li>
+								<li class="shou"><img src="../images/liu-images/shou.png"><span>0</span></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="content2">
+				<div class="content-list1">
+					<div class="content3-pic1"></div>
+					<ul class="price_date">
+						<li class="price">3680<span>起</span></li>
+						<li class="date">
+							2016-07-29出发
+						</li>
+						<li class="days">
+							6天
+						</li>
+					</ul>
+					<ul class="introduce">
+						<li class="introduce-list1">南京—开平—番禺—深圳
+						</li>
+						<li class="introduce-list2">
+							领略岭南风光，品味地道美食
+						</li>
+						<li class="introduce-list3">
+							<div class="introduce-list3_1">
+								<img src="../images/liu-images/ren.png" alt="无法加载图片">
+								<span>中国自驾游联盟南京站</span>
+							</div>
+							<ul class="introduce-list3_2">
+								<li><img src="../images/liu-images/yanjing.png"><span>36</span></li>
+								<li class="shou"><img src="../images/liu-images/shou.png"><span>0</span></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="content-list2">
+					<div class="content3-pic2"></div>
+					<ul class="price_date">
+						<li class="price">3580<span>起</span></li>
+						<li class="date">
+							2016-7-21出发
+						</li>
+						<li class="days">
+							8天
+						</li>
+					</ul>
+					<ul class="introduce">
+						<li class="introduce-list1">昆明—丽江—香格里拉—大理
+						</li>
+						<li class="introduce-list2">
+							最经典滇西北行程，体验梦中的香格里拉
+						</li>
+						<li class="introduce-list3">
+							<div class="introduce-list3_1">
+								<img src="../images/liu-images/ren.png" alt="无法加载图片">
+								<span>中国自驾游联盟南京站</span>
+							</div>
+							<ul class="introduce-list3_2">
+								<li><img src="../images/liu-images/yanjing.png"><span>36</span></li>
+								<li class="shou"><img src="../images/liu-images/shou.png"><span>0</span></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="content-list3">
+					<div class="content3-pic3"></div>
+					<ul class="price_date">
+						<li class="price">3580<span>起</span></li>
+						<li class="date">
+							2016-06-16出发
+						</li>
+						<li class="days">
+							8天
+						</li>
+					</ul>
+					<ul class="introduce">
+						<li class="introduce-list1">普洱—望天树—傣族园—抚仙湖
+						</li>
+						<li class="introduce-list2">
+							大理双廊洱海、腾冲银杏
+						</li>
+						<li class="introduce-list3">
+							<div class="introduce-list3_1">
+								<img src="../images/liu-images/ren.png" alt="无法加载图片">
+								<span>中国自驾游联盟南京站</span>
+							</div>
+							<ul class="introduce-list3_2">
+								<li><img src="../images/liu-images/yanjing.png"><span>36</span></li>
+								<li class="shou"><img src="../images/liu-images/shou.png"><span>0</span></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="content2">
+				<div class="content-list1">
+					<div class="content4-pic1"></div>
+					<ul class="price_date">
+						<li class="price">1880<span>起</span></li>
+						<li class="date">
+							2016-05-21出发
+						</li>
+						<li class="days">
+							5天
+						</li>
+					</ul>
+					<ul class="introduce">
+						<li class="introduce-list1">广元—文县—九寨沟—都江堰
+						</li>
+						<li class="introduce-list2">
+							走进童话冰雪世界
+						</li>
+						<li class="introduce-list3">
+							<div class="introduce-list3_1">
+								<img src="../images/liu-images/ren.png" alt="无法加载图片">
+								<span>重庆迦南自驾俱乐部</span>
+							</div>
+							<ul class="introduce-list3_2">
+								<li><img src="../images/liu-images/yanjing.png"><span>36</span></li>
+								<li class="shou"><img src="../images/liu-images/shou.png"><span>0</span></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="content-list2">
+					<div class="content4-pic2"></div>
+					<ul class="price_date">
+						<li class="price">4980<span>起</span></li>
+						<li class="date">
+							2016-04-21出发
+						</li>
+						<li class="days">
+							9天
+						</li>
+					</ul>
+					<ul class="introduce">
+						<li class="introduce-list1">重庆—长白山—敦化—雪乡—哈尔滨
+						</li>
+						<li class="introduce-list2">
+							梦幻雪乡，北国童话
+						</li>
+						<li class="introduce-list3">
+							<div class="introduce-list3_1">
+								<img src="../images/liu-images/ren.png" alt="无法加载图片">
+								<span>北京969汽车俱乐部</span>
+							</div>
+							<ul class="introduce-list3_2">
+								<li><img src="../images/liu-images/yanjing.png"><span>36</span></li>
+								<li class="shou"><img src="../images/liu-images/shou.png"><span>0</span></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="content-list3">
+					<div class="content4-pic3"></div>
+					<ul class="price_date">
+						<li class="price">1580<span>起</span></li>
+						<li class="date">
+							2016-04-16出发
+						</li>
+						<li class="days">
+							4天
+						</li>
+					</ul>
+					<ul class="introduce">
+						<li class="introduce-list1">台儿庄—琅琊台—东营—北京
+						</li>
+						<li class="introduce-list2">
+							寻梦琅琊，探秘琅琊台
+						</li>
+						<li class="introduce-list3">
+							<div class="introduce-list3_1">
+								<img src="../images/liu-images/ren.png" alt="无法加载图片">
+								<span>北京969汽车俱乐部</span>
+							</div>
+							<ul class="introduce-list3_2">
+								<li><img src="../images/liu-images/yanjing.png"><span>36</span></li>
+								<li class="shou"><img src="../images/liu-images/shou.png"><span>0</span></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="content2">
+				<div class="content-list1">
+					<div class="content5-pic1"></div>
+					<ul class="price_date">
+						<li class="price">17800<span>起</span></li>
+						<li class="date">
+							2016-04-02出发
+						</li>
+						<li class="days">
+							11天
+						</li>
+					</ul>
+					<ul class="introduce">
+						<li class="introduce-list1">墨尔本—大洋路—堪培拉—悉尼
+						</li>
+						<li class="introduce-list2">
+							大洋路深度探索野性澳洲风情
+						</li>
+						<li class="introduce-list3">
+							<div class="introduce-list3_1">
+								<img src="../images/liu-images/ren.png" alt="无法加载图片">
+								<span>七十迈国际自驾</span>
+							</div>
+							<ul class="introduce-list3_2">
+								<li><img src="../images/liu-images/yanjing.png"><span>36</span></li>
+								<li class="shou"><img src="../images/liu-images/shou.png"><span>0</span></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="content-list2">
+					<div class="content5-pic2"></div>
+					<ul class="price_date">
+						<li class="price">19800<span>起</span></li>
+						<li class="date">
+							2016-03-02出发
+						</li>
+						<li class="days">
+							14天
+						</li>
+					</ul>
+					<ul class="introduce">
+						<li class="introduce-list1">奥克兰—皇后镇—蒂阿瑙—基督城
+						</li>
+						<li class="introduce-list2">
+							长白云之乡、地球上最后一片净土
+						</li>
+						<li class="introduce-list3">
+							<div class="introduce-list3_1">
+								<img src="../images/liu-images/ren.png" alt="无法加载图片">
+								<span>七十迈国际自驾</span>
+							</div>
+							<ul class="introduce-list3_2">
+								<li><img src="../images/liu-images/yanjing.png"><span>36</span></li>
+								<li class="shou"><img src="../images/liu-images/shou.png"><span>0</span></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="content-list3">
+					<div class="content5-pic3"></div>
+					<ul class="price_date">
+						<li class="price">6980<span>起</span></li>
+						<li class="date">
+							2016-02-30出发
+						</li>
+						<li class="days">
+							9天
+						</li>
+					</ul>
+					<ul class="introduce">
+						<li class="introduce-list1">金边—西哈努克港—暹粒
+						</li>
+						<li class="introduce-list2">
+							柬埔寨金边暹粒西港自驾之旅
+						</li>
+						<li class="introduce-list3">
+							<div class="introduce-list3_1">
+								<img src="../images/liu-images/ren.png" alt="无法加载图片">
+								<span>重庆迦南自驾俱乐部</span>
+							</div>
+							<ul class="introduce-list3_2">
+								<li><img src="../images/liu-images/yanjing.png"><span>36</span></li>
+								<li class="shou"><img src="../images/liu-images/shou.png"><span>0</span></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="content2">
+				<div class="content-list1">
+					<div class="content6-pic1"></div>
+					<ul class="price_date">
+						<li class="price">18800<span>起</span></li>
+						<li class="date">
+							2016-02-11出发
+						</li>
+						<li class="days">
+							12天
+						</li>
+					</ul>
+					<ul class="introduce">
+						<li class="introduce-list1">旧金山—文图拉—洛杉矶—檀香山
+						</li>
+						<li class="introduce-list2">
+							加州一号公路＋夏威夷欧胡岛大环岛
+						</li>
+						<li class="introduce-list3">
+							<div class="introduce-list3_1">
+								<img src="../images/liu-images/ren.png" alt="无法加载图片">
+								<span>七十迈国际自驾</span>
+							</div>
+							<ul class="introduce-list3_2">
+								<li><img src="../images/liu-images/yanjing.png"><span>36</span></li>
+								<li class="shou"><img src="../images/liu-images/shou.png"><span>0</span></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="content-list2">
+					<div class="content6-pic2"></div>
+					<ul class="price_date">
+						<li class="price">23980<span>起</span></li>
+						<li class="date">
+							2016-01-30出发
+						</li>
+						<li class="days">
+							10天
+						</li>
+					</ul>
+					<ul class="introduce">
+						<li class="introduce-list1">墨尔本—莫宁顿半岛—华南府
+						</li>
+						<li class="introduce-list2">
+							饱览大自然美景，感受澳洲人的活力和闲适
+						</li>
+						<li class="introduce-list3">
+							<div class="introduce-list3_1">
+								<img src="../images/liu-images/ren.png" alt="无法加载图片">
+								<span>爱车环球自驾</span>
+							</div>
+							<ul class="introduce-list3_2">
+								<li><img src="../images/liu-images/yanjing.png"><span>36</span></li>
+								<li class="shou"><img src="../images/liu-images/shou.png"><span>0</span></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="content-list3">
+					<div class="content6-pic3"></div>
+					<ul class="price_date">
+						<li class="price">2580<span>起</span></li>
+						<li class="date">
+							2015-12-07出发
+						</li>
+						<li class="days">
+							7天
+						</li>
+					</ul>
+					<ul class="introduce">
+						<li class="introduce-list1">北京—南宁—下龙湾—吉婆岛—河内
+						</li>
+						<li class="introduce-list2">
+							探访世界自然遗产之一海上桂林下龙湾
+						</li>
+						<li class="introduce-list3">
+							<div class="introduce-list3_1">
+								<img src="../images/liu-images/ren.png" alt="无法加载图片">
+								<span>重庆迦南自驾俱乐部</span>
+							</div>
+							<ul class="introduce-list3_2">
+								<li><img src="../images/liu-images/yanjing.png"><span>36</span></li>
+								<li class="shou"><img src="../images/liu-images/shou.png"><span>0</span></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="nextPage">
+			<ul class="next-page">
+				<li class="one"><a href="#"><<</a></li>
+				<li class="one"><a href="page8.html"><</a></li>
+				<li class="one"><a href="#">1</a></li>
+				<li class="one"><a href="#">2</a></li>
+				<li class="one"><a href="#">3</a></li>
+				<li class="two"><a href="">4</a></li>
+				<li class="one"><a href="page13.html">></a></li>
+				<li class="one"><a href="#">>></a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="foot1">
+			<ul class="foot1-font">
+				<li><a href="">人民交通出版社</a></li>
+				<li><a href="">爱自驾</a></li>
+				<li><a href="">联系我们</a></li>
+				<li><a href="">友情链接</a></li>
+				<li><a href="">爱自驾品牌店</a></li>
+			</ul>
+		</div>
+		<div class="foot2">
+			<ul class="foot2-font">
+				<li>人民交通出版社股份有限公司 </li>
+				<li>京ICP备15018898号-1</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		//footer的上边下一页点击变色
+		$(".nextPage .next-page li").click(function(){
+			$(this).css("background-color","#50bbdb").siblings().css("background-color","#d6d6d6");
+		})
+		//设置nav的滑动背景变色
+		$(document).ready(function(){
+			$(".m-nav .active").addClass("navActive");
+		});
+		$(".m-nav .beactive").mouseenter(function(){
+			$(this).addClass("navActive");
+			$(this).find("a").css("color","#ffffff");
+		})
+		$(".m-nav .beactive").mouseleave(function(){
+			$(this).removeClass("navActive");
+			$(this).find("a").css("color","#333333");
+		})
+		//设置top的qq和weibo图标变色
+		$(".top3 .top3-qq").mouseenter(function(){
+			$(this).find("a img").attr("src","../images/liu-images/qq-bulue.png");
+			return false;
+		}).mouseleave(function(){
+			$(this).find("a img").attr("src","../images/liu-images/qq.gif");
+		})
+		$(".top3 .top3-pic").mouseenter(function(){
+			$(this).find("a img").attr("src","../images/liu-images/sina-blue.png");
+			return false;
+		}).mouseleave(function(){
+			$(this).find("a img").attr("src","../images/liu-images/sina.png");
+		})
+		//定位的效果设置
+		$(".top1").mouseenter(function(){
+			$(this).find(".top1-font img").attr("src","../images/liu-images/live-blue.png");
+			$(this).find(".top1-font1 a").css("color","#50bbdb");
+			$(this).find(".top1-font2 a").css("color","#50bbdb");
+		}).mouseleave(function(){
+			$(this).find(".top1-font img").attr("src","../images/liu-images/live.png");
+			$(this).find(".top1-font1 a").css("color","#ffffff");
+			$(this).find(".top1-font2 a").css("color","#cecccc");
+		})
+		$(".top1").click(function(){
+			$(".top1-dingwei").css("display","block");
+		});
+		$(".dingwei").click(function(){
+			$(".top1-dingwei").css("display","none");
+		});
+		$(".dingwei2 li").click(function(){
+			var txt = $(this).text();
+			$(".top1-font1 a").text(txt);
+		})
+
+		$(".top1-dingwei .dingwei2 li").mouseenter(function(){
+				$(this).css("background-color","#CEF6F5");
+		}).mouseleave(function(){
+				$(this).css("background-color","#ffffff");
+		})
+		//手机app下载效果设置
+		$(".top2").mouseenter(function(){
+			$(this).find(".top2-pic img").attr("src","../images/liu-images/phone-blue.png");
+			$(this).find(".top2-font a").css("color","#50bbdb");
+		}).mouseleave(function(){
+			$(this).find(".top2-pic img").attr("src","../images/liu-images/phone.png");
+			$(this).find(".top2-font a").css("color","#ffffff");
+		})
+		//登录注册的效果
+		$(".top3 .top3-font1").mouseenter(function(){
+			$(this).find("a").css("color","#50bbdb");
+			}).mouseleave(function(){
+			$(this).find("a").css("color","#ffffff");
+		});
+		$(".top3 .top3-font2").mouseenter(function(){
+			$(this).find("a").css("color","#50bbdb");
+			}).mouseleave(function(){
+			$(this).find("a").css("color","#ffffff");
+		});
+
+		//container
+		$(document).ready(function(){
+			$(".city1 a").css("color","#ffffff");
+		})
+		// $("select-list1 span").mouseenter(function(){
+		// 	$(this).addClass("city");
+		// })
+
+		//footer
+		$(".foot1 .foot1-font li a").mouseenter(function(){
+			$(this).css("color","#50bbdb");
+		}).mouseleave(function(){
+			$(this).css("color","#ffffff");
+		})
+
+		//热门搜索
+		$(".hot-search li a").click(function(){
+			var val = $(this).text();
+			$("#txt").val(val);
+		})
+		//head2_1的设置
+		$(".head2_1 a").click(function(){
+			var txt = $(".head2 .one").text();
+			// alert(txt);
+			text = Number(txt);
+			if(text != 1){
+				txt = text - 1;
+				$(".head2 .one").text(txt);
+			}
+
+		})
+		$(".head2_2 a").click(function(){
+			var txt = $(".head2 .one").text();
+			// alert(txt);
+			var text = Number(txt);
+			if(text != 4){
+				txt = text + 1;
+				$(".head2 .one").text(txt);
+			}
+
+		});
+		$(".introduce-list3_1 span").mouseenter(function(){
+			$(this).css("color","#50bbdb");
+		}).mouseleave(function(){
+			$(this).css("color","#a7a7a7")
+		})
+		//点赞的设置
+		// $(".introduce-list3_2 .shou img").click(function(){
+		// 	var src = $(this).attr("src");
+		// 	// alert(src);
+		// 	var txt = $(this).siblings().text();
+		// 	var txt = Number(txt);
+		// 	// alert(txt);
+		// 	if(src == "images/shou.png"){
+		// 		$(this).attr("src","images/zan2.gif");
+		// 		txt = text + 1;
+		// 		$(".introduce-list3_2 .shou span").text(txt);
+		// 	}else{
+		// 		$(this).attr("src","images/shou.png");
+		// 		txt = text - 1;
+		// 		$(".introduce-list3_2 .shou span").text(txt);
+		// 	}
+		// });
+		$(".introduce-list3_2 .shou img").click(function(){
+			var src = $(this).attr("src");
+			var txt = $(this).siblings().text();
+			var txt2 = Number(txt);
+			if(src == "../images/liu-images/shou.png"){
+				txt = txt2 + 1;
+				$(this).siblings().text(txt);
+				$(this).attr("src","../images/liu-images/zan2.gif");
+			}else{
+				txt = txt2 - 1;
+				$(this).siblings().text(txt);
+				$(this).attr("src","../images/liu-images/shou.png");
+			}
+		})
+		//模态框
+		$(".top3-font1 a").click(function(){
+			$("#myModal").modal();
+		});
+		// $(".top3-font2 a").click(function(){
+		// 	$("#dlModal").modal();
+		// });
+
+
+	</script>
+</body>
+</html>

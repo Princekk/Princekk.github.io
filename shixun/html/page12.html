@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="css/datepicker.min.css" rel="stylesheet" type="text/css"> <!-- 日期选择器 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">  <!-- bootstrap -->
+	<link href="css/glDatePicker.default.css" rel="stylesheet" type="text/css">
+	<link href="css/star-rating-svg.css" rel="stylesheet" type="text/css">  <!-- 星星评分 -->
+	<link rel="stylesheet" type="text/css" media="screen" href="css/als_demo.css" />  <!-- 历史组团图片左右轮播 -->
+	
+	<link rel="stylesheet" type="text/css" href="css/page12.css">
+	
+	
+</head>
+<body>
+	<div id="top">
+		<div class="top-1">
+			<div class="top-1-1">
+				<div>
+				 <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+				</div>
+				<p>北京</p>
+				<span class="qiehuan">切换</span>
+			</div>
+
+			 <ul class="placelist place1">
+			 	<p>全国:</p>
+			 	<div class="placelist2">
+		          <li class="placeName" id="11">北京</li>
+		          <li class="placeName" id="12">天津</li>
+		          <li class="placeName" id="13">河北</li>
+		          <li class="placeName" id="14">山西</li>
+		          <li class="placeName" id="15">内蒙古</li>
+		          <li class="placeName" id="21">辽宁</li>
+		          <li class="placeName" id="22">吉林</li>
+		          <li class="placeName" id="23">黑龙江</li>
+		          <li class="placeName" id="31">上海</li>
+		          <li class="placeName" id="32">江苏</li>
+		          <li class="placeName" id="33">浙江</li>
+		          <li class="placeName" id="34">安徽</li>
+		          <li class="placeName" id="35">福建</li>
+		          <li class="placeName" id="36">江西</li>
+		          <li class="placeName" id="37">山东</li>
+		          <li class="placeName" id="41">河南</li>
+		          <li class="placeName" id="42">湖北</li>
+		          <li class="placeName" id="43">湖南</li>
+		          <li class="placeName" id="44">广东</li>
+		          <li class="placeName" id="45">广西</li>
+		          <li class="placeName" id="46">海南</li>
+		          <li class="placeName" id="50">重庆</li>
+		          <li class="placeName" id="51">四川</li>
+		          <li class="placeName" id="52">贵州</li>
+		          <li class="placeName" id="53">云南</li>
+		          <li class="placeName" id="54">西藏</li>
+		          <li class="placeName" id="61">陕西</li>
+		          <li class="placeName" id="62">甘肃</li>
+		          <li class="placeName" id="63">青海</li>
+		          <li class="placeName" id="64">宁夏</li>
+		          <li class="placeName" id="65">新疆</li>
+		          </div>
+        	</ul>
+
+
+			<div class="top-1-2">
+				<img src="zheng-images/phone.png">
+				
+				<a href="http://www.izijia.cn/app_down/">下载手机APP</a>
+				
+			</div>
+			<div class="top-1-3">
+				<img class="qq" src="zheng-images/qq.png">
+				<img class="sina" src="zheng-images/sina.png">
+				<div>
+					<a class="denglu" data-toggle="modal" data-target="#dlModal" href="">登录</a>
+					<span>丨</span>
+					<a class="zhuce" data-toggle="modal" data-target="#myModal" href="">注册</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="header">
+		<div class="header1">
+			<div class="logo">
+				<img src="zheng-images/logo.jpg">
+			</div>
+			<ul class="list">
+				<li><a href="">首页</a></li>
+				<li><a href="">目的地</a></li>
+				<li><a href="">线路</a></li>
+				<li><a href="">订制</a></li>
+				<li class="zijiatuan"><a href="">自驾团</a></li>
+				<li><a href="">摄影</a></li>
+				<li><a href="">互动</a></li>
+				<li><a href="">精选</a></li>
+				<li><a href="">预定</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="banner">
+		<div id="banner-left">
+			<p class="banner1">首页   >   自驾团   >   自驾团境内</p>
+			<div class="view">
+				<img src="zheng-images/view/lbt1.jpg">
+				<img src="zheng-images/view/lbt2.jpg">
+				<img src="zheng-images/view/lbt3.jpg">
+				<img src="zheng-images/view/lbt4.jpg">
+				<img src="zheng-images/view/lbt5.jpg">
+			</div>
+			<div class="lunbotu">
+				<div class="zuo">
+					<img src="zheng-images/zuo.gif">
+				</div>
+				<div class="bigviewlist">
+				<ul class="viewlist">
+					<li><img src="zheng-images/view/12xiao5.jpg"></li>
+					<li><img src="zheng-images/view/12xiao1.jpg"></li>
+					<li><img src="zheng-images/view/12xiao2.jpg"></li>
+					<li><img src="zheng-images/view/12xiao3.jpg"></li>
+					<li><img src="zheng-images/view/lbt5.jpg"></li>
+					<li><img src="zheng-images/view/zutuan1.jpg"></li>
+					<li><img src="zheng-images/view/zutuan2.jpg"></li>
+					<li><img src="zheng-images/view/zutuan3.jpg"></li>
+				</ul>
+				</div>
+				<div class="you">
+					<img src="zheng-images/you.gif">
+				</div>
+			</div>
+		
+			<!-- 显示的日历插件 -->
+			<input type="text" id="mydate" gldp-id="mydate" />
+   			<div gldp-el="mydate"
+         	style="width:501px; height:355px; position:absolute; top:50px; left:0px;">
+   			 </div>
+   			 <!-- 鼠标移出事件 -->
+			
+
+			<ul class="chuyou sbyrsj">
+	    		<li class="chuyou1">出游日期：<input type='text' placeholder="请选择出发日期" class="datepicker-here">
+	    		</li>
+	    		<li class="chuyou1">出发城市：<input type='text' placeholder="请选择出发城市" class="cfcs">
+				</li>
+	    		<li class="chuyou1"><span class="chuyourenshu">出游人数：</span>
+	    			<ul class="renshu1">
+	    			<li>+</li>
+	    			<li>1</li>
+	    			<li>-</li>
+	    		    </ul>
+	    		    <p>成人</p>
+	    		    <ul class="renshu2">
+	    			<li>+</li>
+	    			<li>1</li>
+	    			<li>-</li>
+	    		    </ul>
+	    		    <p>儿童</p>
+	    
+	    		</li>
+	    		<input type="button" value="我要报名" class="btn sbbm">
+	    	</ul>
+
+
+
+		</div>
+		<div id="banner-right">
+			<h3>云南落地自驾行摄之旅</h3>
+			<p class="wenzi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大地之画东川红土地，光与影精美搭配的元阳梯田，一个摄影穿越的天堂……
+			<br>
+		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大地的调色板东川红土地，被称为光与影精美搭配的元阳梯田；这些地方，见过便终生难忘，那瑰丽的色彩，那历经亿万年的修炼，那亘古不变的华丽，灼痛了世人的双眼，最美的季节记录最美的影像，探寻最美的风景……
+			<br>
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这是一次记录大地色彩之美的摄影旅行。
+	        <br>
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这是享誉摄影世界的世界级摄影旅行目的地，这里没有都市的喧嚣与烦躁，没有钢筋森林给人带来的种种压抑；这里是放飞心灵的地方，也是您涤荡心灵的梦幻旅程。
+	    	</p>
+	    	<div class="baoming">
+	    		<p class="aizijia">爱自驾价：<span class="qi">￥</span><span class="money">4580</span><span class="qi">起</span> </p>
+	    		<input type="button" value="我要报名" class="btn">
+	    		<a href="##"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span><span class="shoucang">收藏</span></a>
+	    	</div>
+	    	<ul class="chuyou">
+	    		<li class="chuyou1">出游日期：<input type='text' placeholder="请选择出发日期" class="datepicker-here">
+	    		</li>
+	    		<li class="chuyou1">出发城市：<input type='text' placeholder="请选择出发城市" class="cfcs">
+				</li>
+				
+				<ul class="placelist place2">
+			 	<p>全国:</p>
+			 	<div class="placelist2">
+		          <li class="placeName" id="11">北京</li>
+		          <li class="placeName" id="12">天津</li>
+		          <li class="placeName" id="13">河北</li>
+		          <li class="placeName" id="14">山西</li>
+		          <li class="placeName" id="15">内蒙古</li>
+		          <li class="placeName" id="21">辽宁</li>
+		          <li class="placeName" id="22">吉林</li>
+		          <li class="placeName" id="23">黑龙江</li>
+		          <li class="placeName" id="31">上海</li>
+		          <li class="placeName" id="32">江苏</li>
+		          <li class="placeName" id="33">浙江</li>
+		          <li class="placeName" id="34">安徽</li>
+		          <li class="placeName" id="35">福建</li>
+		          <li class="placeName" id="36">江西</li>
+		          <li class="placeName" id="37">山东</li>
+		          <li class="placeName" id="41">河南</li>
+		          <li class="placeName" id="42">湖北</li>
+		          <li class="placeName" id="43">湖南</li>
+		          <li class="placeName" id="44">广东</li>
+		          <li class="placeName" id="45">广西</li>
+		          <li class="placeName" id="46">海南</li>
+		          <li class="placeName" id="50">重庆</li>
+		          <li class="placeName" id="51">四川</li>
+		          <li class="placeName" id="52">贵州</li>
+		          <li class="placeName" id="53">云南</li>
+		          <li class="placeName" id="54">西藏</li>
+		          <li class="placeName" id="61">陕西</li>
+		          <li class="placeName" id="62">甘肃</li>
+		          <li class="placeName" id="63">青海</li>
+		          <li class="placeName" id="64">宁夏</li>
+		          <li class="placeName" id="65">新疆</li>
+		          </div>
+        	</ul>
+
+
+
+	    		<li class="chuyou1"><span class="chuyourenshu">出游人数：</span>
+	    			<ul class="renshu1">
+	    			<li>+</li>
+	    			<li>1</li>
+	    			<li>-</li>
+	    		    </ul>
+	    		    <p>成人</p>
+	    		    <ul class="renshu2">
+	    			<li>+</li>
+	    			<li>1</li>
+	    			<li>-</li>
+	    		    </ul>
+	    		    <p>儿童</p>
+	    		    <a href="" class="ertong">儿童标准</a>
+	    		</li>
+	    		<li class="chuyou1">行程概要：<span class="luxian">昆明—建水—元阳—元江—玉溪—东川—昆明&nbsp;&nbsp;&nbsp;</span>
+					<a href="" class="xiangqing">详情>></a>
+	    		</li>
+	    	</ul>
+	    	<div class="dingzhi">
+	    		<img src="zheng-images/lijidingzhi.jpg">
+	    		<p>量身定制 专属行程 独立包团</p>
+	    	</div>
+		</div>
+	</div>
+
+	<div id="dingwei">
+		<p>分享</p>
+		<ul>
+			<li><a href="http://t.qq.com/"><img src="zheng-images/qqweibo.png"></a></li>
+			<li><a href="http://weibo.com/"><img src="zheng-images/weibo.png"></a></li>
+			<li><a href="http://qzone.qq.com/"><img src="zheng-images/kongjian.png"></a></li>
+			<li><a href="http://www.netease.com/"><img src="zheng-images/wangyi.png"></a></li>
+		</ul>
+	</div>
+
+	<div id="lingdui">
+		<div class="lingdui1">
+		<div class="lan"></div>
+		<h4>领队介绍</h4>
+		</div>
+		<div>
+			<div class="lang">
+			<img src="zheng-images/lang.jpg">
+			<p class="zgzj">中国自驾游联盟南京<br>站</p>
+			</div>
+			<p class="duanluo">
+				自2005年开始，南京首家专业自驾车旅游公司——“中国自驾游联盟”，本着以城市为中心,以旅行社为龙头,以自驾游自助游为纽带的发展宗旨,通过强劲发展,现已覆盖全国20个省200多个城市，总部设在南京，在“专业保障，旅游保险，特色活动，媒体支撑”的指导思想指引下，平均年组织车友实施自驾游旅游活动百余次，参加人员达数万人！近年来，我们策划与服务的自驾游车队达400余个，参加车辆超过2000辆，参加的车友近十万多人次！ 我们的行程遍布华南、华中、华北、西南、西北20余省、区，并多次成功举办主题自驾活动，同时在尝试开辟国外自驾游市场，引导及推动着中国自驾游的方向与潮流，赢得了广大媒体与各路车会的关注与信任，成为本地区自驾游最具活力、最具经验、最具规模、最具口碑的专业机构。
+			</p>
+		</div>	
+	</div>
+	<div id="lishi">
+		<h4>历史组团</h4>
+		<div class="kuang">
+			<div class="als-container" id="my-als-list">
+					<span class="als-prev">
+					<img  class="xiaozuo" src="zheng-images/xiaozuo.gif"  alt="prev" title="previous" />
+					</span>
+				<div class="als-viewport">
+				<ul class="als-wrapper">
+					<li class="li1 als-item">
+						<img src="zheng-images/view/zutuan1.jpg">
+						<p>海天佛国 普陀山祈福之旅<br><br><br>2015-01-03
+						</p>
+					</li>
+					<li class="als-item">
+						<img src="zheng-images/view/zutuan2.jpg">
+						<p>冰雪呼伦贝尔 冬季那达慕自驾<br><br>2015-12-30
+						</p>
+					</li>
+					<li class="als-item">
+						<img src="zheng-images/view/zutuan3.jpg">
+						<p>食在广东 粤菜美食自驾之旅<br><br>2015-12-29
+						</p>
+					</li>
+					<li class="als-item">
+						<img src="zheng-images/view/zutuan4.jpg">
+						<p>彩云之南 边关秘境<br><br><br>2016-01-03
+						</p>
+					</li>
+					<li class="als-item">
+						<img src="zheng-images/view/tian1.jpg">
+						<p>海天佛国 普陀山祈福之旅<br><br><br>2016-01-03
+						</p>
+					</li>
+					<li class="als-item">
+						<img src="zheng-images/view/tian2.jpg">
+						<p>冰雪呼伦贝尔 冬季那达慕自驾<br><br><br>2016-01-03
+						</p>
+					</li>
+					<li class="als-item">
+						<img src="zheng-images/view/tian3.jpg">
+						<p>食在广东 粤菜美食自驾之旅<br><br><br>2016-01-03
+						</p>
+					</li>
+					<li class="als-item">
+						<img src="zheng-images/view/tian4.jpg">
+						<p>彩云之南 边关秘境<br><br><br>2016-01-03
+						</p>
+					</li>
+					
+				</ul>
+			    </div>
+					 <span class="als-next">
+					<img class="xiaoyou" src="zheng-images/xiaoyou.gif" alt="next" title="next" /></span>
+				
+			</div>
+		</div>
+	</div>
+	<div id="demoTab">
+		<ul class="resp-tabs-list">
+			<li><a href="#bigxcjj">行程简介</a></li>
+			<li><a href="#feiyong">费用明细</a></li>
+			<li><a href="#qita">其他说明</a></li>
+			<li><a href="#yonghu">用户评论</a></li>
+		</ul>
+		<div class="resp-tabs-container">
+			<div>
+			<div id="bigxcjj">
+				<img class="xcjj" src="zheng-images/xcjj.png">
+				<img class="liucheng" src="zheng-images/liucheng.png">
+				<div class="tian">
+					<h3>第二天</h3>
+					<p class="kunming">昆明—建水</p>
+					<p class="canshi">餐食：早餐、晚餐          住宿：建水
+						<br><br>
+						酒店早餐后，前往由传统的汉族青砖四合大院、彝族土掌房和汉彝结合的瓦檐土掌房三类建筑风格结合的民居世界—
+						—团山民居，团山至今还保存着的完整古村落整体格局，有着滇南乡村特色风貌与传统社会人文环境的原生态特点，
+						世所罕见，极为珍贵。到达建水县城后，前往参观朱家花园，有一组规模宠大的清代民居建筑，有“滇南大观园”之
+						誉！房间内的床，凳，桌，椅均采用紫木雕刻，体现清代风格，门僮及导游小姐的服饰和接待客人的清式礼仪，让人
+						有恍若置身百年前历史生活的感受。
+					</p>
+					<img class="tian1" src="zheng-images/view/tian1.jpg">
+					<img class="tian2" src="zheng-images/view/tian2.jpg">
+					<div class="xvxian"></div>
+
+					<h3>第三天</h3>
+					<p class="kunming">建水—元阳</p>
+					<p class="canshi">餐食：早餐、晚餐          住宿：元阳
+						<br><br>
+						酒店早餐后，前往中国最美的元阳梯田。元阳哈尼梯田主要有三大核心区组成——【坝达景区】、【老虎嘴景区】、【多依树景区】，去老虎嘴俯看梯田是很好的选择，6000多亩梯田分布于深谷，像一朵巨大的花蕊，老虎嘴被美国摄影家称为世界上最壮丽的田园风光；晚上看夕阳，则应该选择坝达景区，在龙树坝拍日落也是不错的选择；感受大自然的鬼斧神工，19万亩映着蓝天的哈尼梯田就在你的脚下，哈尼梯田有一千多年的历史，至今科学仍无法解答，这样大面积的，在这崇山峻岭中是怎么挖掘的。
+					</p>
+					<img class="tian1" src="zheng-images/view/tian3.jpg">
+					<img class="tian2" src="zheng-images/view/tian4.jpg">
+				</div>
+			</div>
+			<div id="feiyong">
+				<img src="zheng-images/fymx.png">
+				<p>
+					<br>
+					【活动费用】4580元/人<br>
+					【VIP会员价】4500元/人<br>
+					【儿童费用】2500元/人（1.1米-1.4米不占床）<br>
+					<br>
+					【费用包含】<br>
+					<span>
+					1、交通：起亚狮跑或现代IX35（4人1车，1000元/人，如不足4人1车，需补车费）<br>
+					2、通讯：通讯设备，车标，<车队出行的后勤服务>组织费用<br>
+					3、用餐：6早6晚，（晚餐60元/人）<br>
+					4、住宿：建水住五星标准；昆明，元阳，玉溪住四星标准；东川红土地住三星标准<br>
+					5、保险：太平洋旅游意外险<br>
+					6、领队：优秀领队及当地导游服务<br>
+					7、景点：建水朱家花园，团山民居，元阳梯田，红河那诺梯田，东川红土地</span><br>
+					<br>
+					【费用不含】<br>
+					<span>
+					1、各地往返昆明机票自理<br>
+					2、全程中餐自理，不占床位早餐请自理<br>
+					3、车辆的油费，路桥费，停车费用<br>
+					4、全程用餐过程中客人所点的酒水费用<br>
+					5、酒店电话费，洗衣费，购物等个人消费</span><br>
+				</p>
+			</div>
+			<div id="qita">
+				<img src="zheng-images/qtsm.png">
+				<p>
+					<br>
+					<span>【活动时间】</span><br>
+					2015年12月27日—2016年1月2日<br>
+					<br>
+					<span>【租车说明】</span><br>
+					1、本行程车辆是由组织方向当地租车公司代租；租车费用由组织方承担。基本车型：起亚狮跑；车型升级需增加车费。<br>
+					2、租车流程：<br>
+					a. 拿车手续<br>
+					驾车人需带齐本人身份证、驾驶证和信用卡壹张，凭上述证件办理租用手续；信用卡额度不得低于10000元人民币，租车的时候需刷
+					8000元的预授权（神州租车规定）。<br>
+					b. 归还所租车辆，办理还车手续后，即解除8000元预授权。<br>
+					c. 交通违章的处罚，还车时需要刷2000元的违章预授权；作为交通违章押金，在还车之后一个月内无违章的情况下自动解除冻结；如
+					有违章,驾车人自行处理违章并通知租车公司后，则解除2000元的预授权；或者请租车公司代为办理违章，费用从2000元预授权中扣除
+					，剩余的部分则解除预授。<br>
+					d. 行车所产生的油费路桥费包括停车费均由车上客人均摊，另有约定的除外<br>
+					<br>
+					<span>【注意事项】</span><br>
+					1、提前做好汽车检查和保养。提前准备好随车工具、备胎、润滑油等，检查户外装备是否齐全。遇旅途中出现意外事故，承办方有义
+					务和责任为客人协助解决相关问题，但不负事故责任和经济赔偿，如产生赔偿将按保险公司规定赔偿。如遇人力不可抗拒因素所产生的
+					费用由客人自理，如塌方、自然灾害等。<br>
+					2、游客必须身体健康，游程中应遵守纪律，发扬团结互助的精神，必须听从领队劝说不可擅自行动，否则后果自负。<br>
+					3、请自备好照相机、胶卷、防晒霜、爱好摄影、注意照看相关器材。<br>
+					4、自驾车请保持在高速路上的车距，行驶中望车主自觉遵守相关交通规则，不随意超车，严禁在弯道处停车、听从领队安排协调。<br>
+					5、长时间在户外活动，请戴上太阳镜，涂抹防晒霜以护肤；爱护环境，安全第一，全部垃圾带出景区。
+				</p>
+			</div>
+			<div id="yonghu">
+				<img class="dp" src="zheng-images/yhpl.png">
+				<div class="dianping">
+					<div class="yhdp">用户点评（15）</div>
+					<p class="zh">综合评价：</p>
+					<div class="my-rating my-rating1"></div>
+					<!-- <img src="zheng-images/xx.jpg"> -->
+				</div>
+				<div class="e29">
+					<div class="e29-1">
+						<img src="zheng-images/huang.jpg">
+						<p>E29****329</p>
+					</div>
+					<div class="e29-2">
+						<p class="manyi">行程安排：满意      |     住宿餐食：满意      |     旅行交通：满意      |     综合评价：
+						<span class="my-rating my-rating2"></span>
+						</p>
+						<p class="hao">18号就结束行程了，现在才来评价，总的来说还是不错的。</p>
+						<img src="zheng-images/view/zutuan4.jpg">
+						<img src="zheng-images/view/zutuan3.jpg">
+						<p class="lz">2015-12-22 14:12     来自：爱自驾电脑版</p>
+					</div>
+				</div>
+
+				<div class="e29">
+					<div class="e29-1">
+						<img src="zheng-images/huang.jpg">
+						<p>E29****329</p>
+					</div>
+					<div class="e29-2">
+						<p class="manyi">行程安排：满意      |     住宿餐食：满意      |     旅行交通：满意      |     综合评价：
+						<span class="my-rating my-rating2"></span>
+						</p>
+						<p class="hao2">总体评论给90分！双十一活动的时候定的，价格很便宜，还会担心会不会住宿太偏僻。结果还好，第一天在水原这个地方，房间是公寓。周围很多小商店和酒吧，可以不用非要在第一天行程的汗蒸那里吃饭，这点给大家点建议，后三晚在加阳的怀旧酒店。还可以了，相对于这个价格不用太刻意挑剔。周围吃饭的非常方便。去明洞和北屋打车都要10000-14000的价钱。周围有地铁，我们基本是早晨地铁出，晚上打车回。<br><br>
+						<span class="span1">行程安排：</span>行程安排总体满意，第二天的购物关键的重点在于华克山庄，只有60分钟，那里虽然小 折扣真的便宜。娇韵诗免税基础又七折。我们基本是靠抢的回来，时间太紧张。乐天和新罗其实在网上买更方便 省的大包小包的拎着。直接去机场取，还有积分抵现使用。我订了1500人民币的东西，抵掉400多。乐天世界很好玩，可惜时间段。保存体力到最后再战斗，才是王道。<br><br>
+						<span class="span2">住宿餐食：</span>住宿第一天在水原（偏僻些），后三天在加阳怀旧酒店。周围有地铁加阳站，打车到明洞一万多点。还可以。周围吃饭的多，很方便。<br><br>
+						<span class="span3">旅行交通：</span> 交通基本我们是早晨地铁出 晚上打车回。首尔打车还可以把，不太堵。
+						</p>
+						<img src="zheng-images/view/zutuan4.jpg">
+						<img src="zheng-images/view/zutuan3.jpg">
+						<p class="lz">2015-12-22 14:12     来自：爱自驾电脑版</p>
+						<div class="kefu">
+							<h3>爱自驾客服回复：</h3>
+							<p>尊敬的爱自驾会员，给你立减400这个订单之后，此特惠房型实际您成功预订的此客栈只收了您75元/晚，您可以仔细对比下的，感谢您对爱自驾网的关注与支持，欢迎您下次预订4007-999-999，谢谢！祝您愉快！
+							<br>
+							(2015-12-11 13:23:56)</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="e29">
+					<div class="e29-1">
+						<img src="zheng-images/huang.jpg">
+						<p>E29****329</p>
+					</div>
+					<div class="e29-2">
+						<p class="manyi">行程安排：满意      |     住宿餐食：满意      |     旅行交通：满意      |     综合评价：
+						<span class="my-rating my-rating2"></span>
+						</p>
+						<p class="hao3">18号就结束行程了，现在才来评价，总的来说还是不错的。<br><br>
+						<span class="span1">行程安排：</span> 很好。<br><br>
+						<span class="span2">住宿餐食：</span> 很好。<br><br>
+						<span class="span3">旅行交通：</span> 很好。
+						</p>
+						<br>
+						<p class="lz">2015-12-22 14:12     来自：爱自驾电脑版</p>
+					</div>
+				</div>
+			</div>
+			<div class="chakan">
+					<a href="">査看全部点评>></a>
+					<div class="next">
+						<ul>
+							<li><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span></li>
+							<li class="li1">1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>下一页<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></li>
+						</ul>
+						<p>到</p>
+						<input class="yema"></input>
+						<p>页</p>
+						<input type="button" class="yema" value="确定"></input>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div id="foooter">
+			<div class="footer1">
+				<ul>
+					<li>人民交通出版社</li>
+					<li>爱自驾</li>
+					<li>联系我们</li>
+					<li>友情链接</li>
+					<li>爱自驾品牌店</li>
+				</ul>
+			</div>
+			<div class="footer2">
+				<p>人民交通出版社股份有限公司&nbsp;&nbsp;&nbsp;&nbsp;            京ICP备15018898号-1</p>
+			</div>
+	</div>
+
+	<div class="modal fade" id="dlModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    	<div class="modal-header">
+    		 <button type="button" class="close" data-dismiss="modal"
+               aria-hidden="true">×
+            </button>
+      	<div class="mtkPic">	
+        <img src="zheng-images/modal.jpg">
+        </div>
+        <div class="mtkZhong mtkZhong1">
+        <input class="mtkIn" placeholder="邮箱/手机/用户名" type="text">
+        <input class="mtkIn" placeholder="密码" type="text">
+        <button class="btn ddl">登录</button>
+        </div>
+        <div class="wjmm">
+        	<a href="">忘记密码</a>
+        	<span>还没有账号？</span>
+        	<a href="">免费注册</a>
+        </div>
+        <div class="qt">
+        <img src="zheng-images/baoming.png">
+        </div>
+        <div class="bigzj">
+        <button class="btn zjbm">不登陆，直接报名></button>
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"
+               aria-hidden="true">×
+            </button>
+            <div class="mtkPic">
+            <img src="zheng-images/modal.jpg">
+            </div>
+            <div class="mtkZhong">
+            <div class="shouji">
+        	<a href="">用手机注册</a>
+        	</div>
+            <input class="mtkIn youxiang" placeholder="请输入邮箱" type="text">
+            <span class="srzq1">输入正确！</span>
+            <span class="srcw1">输入错误！</span>
+            <input class="mtkIn yhm" placeholder="用户名，4-16个字符，字母/中文/数字" type="text">
+            <span class="srzq2">输入正确！</span>
+            <span class="srcw2">输入错误！</span>
+            <input class="mtkIn" placeholder="设置密码" type="text">
+            <input class="mtkIn" placeholder="输入密码" type="text">
+            <input class="mtkIn" placeholder="输入邀请码，可不填" type="text">
+            </div>
+            <div class="zhuce">
+            	<p>注册视为同意《爱自驾用户使用协议》</p>
+            	<button type="button" class="btn btn-info">注册</button>
+            </div>
+            <div class="mtkbm">
+            <img src="zheng-images/baoming.png">
+        	</div>
+        	<div class="kuaisu">
+        	<button type="button" class="btn daanniu">快速登录></button>
+        	</div>
+      </div><!-- /.modal-content -->
+   </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+	
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="js/datepicker.min.js"></script>
+	<script src="js/i18n/datepicker.en.js"></script>  
+	<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+	<script src="js/glDatePicker.js"></script>
+	<script src="js/jquery.star-rating-svg.js"></script>
+	<script type="text/javascript" src="js/jquery.als-1.7.min.js" ></script>
+	<script type="text/javascript" src="js/easyResponsiveTabs.js" ></script>
+
+
+	<script type="text/javascript">
+		//top鼠标移入变色:
+		$(".top-1-1").mouseenter(function(){
+			$(".top-1-1 p").css("color","#50bbdb");
+			$(".top-1-1 a").css("color","#50bbdb");
+			$(".top-1-1 span").css("color","#50bbdb");
+		});
+		$(".top-1-1").mouseleave(function(){
+			$(".top-1-1 p").css("color","#fff");
+			$(".top-1-1 a").css("color","#c4cdd2");
+			$(".top-1-1 span").css("color","#fff");
+		});
+		$(".top-1-2").mouseenter(function(){
+			$(".top-1-2 img").attr("src","zheng-images/phone-blue.png");
+			$(".top-1-2 a").css("color","#50bbdb");
+		});
+		$(".top-1-2").mouseleave(function(){
+			$(".top-1-2 img").attr("src","zheng-images/phone.png");
+			$(".top-1-2 a").css("color","#fff");
+		});
+		$(".qq").mouseenter(function(){
+			$(".qq").attr("src","zheng-images/qq-blue.png");
+		});
+		$(".qq").mouseleave(function(){
+			$(".qq").attr("src","zheng-images/qq.png");
+		});
+		$(".sina").mouseenter(function(){
+			$(".sina").attr("src","zheng-images/sina-blue.png");
+		});
+		$(".sina").mouseleave(function(){
+			$(".sina").attr("src","zheng-images/sina.png");
+		});
+		$(".top-1-3 div a").mouseenter(function(){
+			$(this).css("color","#50bbdb");
+		});
+		$(".top-1-3 div a").mouseleave(function(){
+			$(this).css("color","#fff");
+		});
+
+		//鼠标移入定位部分变色：
+		$("#dingwei ul img").mouseenter(function(){
+			$(this).css({"width":"52px","height":"41px","border":"1px solid #7d7a79"});
+		});
+		$("#dingwei ul img").mouseleave(function(){
+			$(this).css({"width":"47px","height":"36px","border":"0px solid #7d7a79"});
+		});
+
+		//模态框:
+		$('#myModal').modal({
+      		show : false,
+        });  
+		
+		//菜单栏变色：
+		$(".list li").mouseenter(function(){
+			$(this).css({"background-color":"#50bbdb","border-bottom":"2px solid #7d7a79"}).siblings().css({"background-color":"#ffffff","border-bottom":"0px solid #7d7a79"});
+			$(".list li").eq(4).css({"background-color":"#50bbdb","border-bottom":"2px solid #7d7a79"})
+		});
+		$(".list").mouseleave(function(){
+			$(".list li").eq(4).css("background-color","#50bbdb").siblings().css({"background-color":"#ffffff","border-bottom":"0px solid #7d7a79"});
+		});
+
+		//城市选择：
+		$(".top-1-1").click(function(){
+			$(".place1").toggle();
+			// $("#placelist").css("display","block");
+			// function CloseCs(){
+			// 	$("body").click(function(event){
+			// 		var elem=event.target;
+			// 		var tagName=$(elem).attr("class");
+			// 		console.log(tagName);
+			// 		if(tagName!="placelist2"){
+			// 			$("#placelist").css("display","none");
+			// 		};
+			// 	});
+			// };
+			// return CloseCs();
+		});
+		$(".place1 li").click(function(){
+			var val=$(this).text();
+			$(".top-1-1 p").text(val);
+		});
+		$(".cfcs").click(function(){
+			$(".place2").toggle();
+		});
+		$(".place2 li").click(function(){
+			var val=$(this).text();
+			$(".cfcs").val(val);
+		});
+
+
+
+		//图片轮播：
+		$(".view").cycle({
+			before:function(){
+				var index=$(this).index();
+				var a = -109*index + "px";
+				$(".viewlist").animate({"margin-left":a});
+				$("#mydate").glDatePicker();   //一直显示的日历插件；
+			}
+		});
+		$(".zuo").click(function(){
+			$(".view").cycle("prev");
+		})
+		$(".you").click(function(){
+			$(".view").cycle("next");
+		})
+
+		//点击收藏：
+		$(".baoming a").click(function(){
+			var val=$(".baoming .glyphicon").attr("class");
+			var array=val.split(" ");
+			if(array[1]=="glyphicon-heart-empty"){
+				$(".baoming .glyphicon").removeClass("glyphicon-heart-empty").addClass("glyphicon-heart")
+			}else{
+				$(".baoming .glyphicon").removeClass("glyphicon-heart").addClass("glyphicon-heart-empty");
+			}
+		});
+
+
+		//鼠标移入跟着鼠标移动：
+		$(".gldp-default").mousemove(function(){
+			var x = event.pageX;
+			var y = event.pageY;
+			$(".sbyrsj").css({"display":"block","left":x,"top":y});
+		});
+		$(".gldp-default").mouseleave(function(){
+			$(".sbyrsj").css("display","none");
+		});
+
+		//加减人数：
+		$("#banner-right .renshu1 li").eq(0).click(function(){
+			var shuzi=$("#banner-right .renshu1 li").eq(1).text();
+			var result=Number(shuzi);
+			var result=result+1;
+			$("#banner-right .renshu1 li").eq(1).text(result);
+		});
+		$("#banner-right .renshu1 li").eq(2).click(function(){
+			var shuzi=$("#banner-right .renshu1 li").eq(1).text();
+			var result=Number(shuzi);
+			var result=result-1;
+			if(result<0){
+				var result=0;
+			}
+			$("#banner-right .renshu1 li").eq(1).text(result);
+		});
+
+		$("#banner-right .renshu2 li").eq(0).click(function(){
+			var shuzi=$("#banner-right .renshu2 li").eq(1).text();
+			var result=Number(shuzi);
+			var result=result+1;
+			$("#banner-right .renshu2 li").eq(1).text(result);
+		});
+		$("#banner-right .renshu2 li").eq(2).click(function(){
+			var shuzi=$("#banner-right .renshu2 li").eq(1).text();
+			var result=Number(shuzi);
+			var result=result-1;
+			if(result<0){
+				var result=0;
+			}
+			$("#banner-right .renshu2 li").eq(1).text(result);
+		});
+
+		//历史组团轮播图：
+		 $("#my-als-list").als({
+		  visible_items: 4,
+		  scrolling_items: 1,
+		  orientation: "horizontal",
+		  circular: "yes",
+		  autoscroll: "yes",
+		  interval: 2000,
+		  speed: 400,
+		  easing: "linear",
+		  direction: "left",
+		  start_from: 0,
+		});
+
+
+
+		//星星评分：
+		$(".my-rating1").starRating({
+    	starSize: 25,
+    	callback: function(currentRating, $el){
+        // make a server call here
+		    }
+		});
+		$(".my-rating2").starRating({
+    	starSize: 18,
+    	callback: function(currentRating, $el){
+        // make a server call here
+		    }
+		});
+
+		//下面换页：
+		$(".next ul li").click(function(){
+			$(this).css({"background-color":"#50bbdb","color":"#fff","border":"1px solid #0d7d9f"}).siblings().css({"background-color":"#fff","color":"#50bbdb","border":"1px solid #e5e5e5"})
+		})
+		//表单验证：
+		var reg = /(^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+)|(^$)/;
+		$(".youxiang").blur(function(){     
+		var str = $(".youxiang").val();  
+		var result = reg.test(str);  
+		if(result){
+			$(".srzq1").css("display","block");
+			$(".srcw1").css("display","none");
+		}else{
+			$(".srcw1").css("display","block");
+			$(".srzq1").css("display","none");
+		}
+	    })
+		var reg = /^[a-zA-Z0-9]{4,16}$/;
+		$(".yhm").blur(function(){     
+		var str = $(".yhm").val();  
+		var result = reg.test(str);  
+		if(result){
+			$(".srzq2").css("display","block");
+			$(".srcw2").css("display","none");
+		}else{
+			$(".srcw2").css("display","block");
+			$(".srzq2").css("display","none");
+		}
+	    });
+
+
+
+
+	</script>
+</body>
+</html>

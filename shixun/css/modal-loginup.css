@@ -1,0 +1,152 @@
+
+.mtkPic{
+	text-align: center;
+	margin-top: 24px;
+}
+.shouji{
+	overflow: hidden;
+	width: 355px;
+	margin: 0 auto;
+	margin-top: 16px;
+}
+.shouji a{
+	display: block;
+	float: right;
+}
+.mtkIn{
+	width: 355px;
+	height: 55px;
+	margin-top: 12px;
+	font-family: 微软雅黑;
+	font-size: 14px;
+	color: #333333;
+}
+.mtkZhong{
+	text-align: center;
+}
+.zhuce{
+	width: 355px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.zhuce p{
+	font-family: 微软雅黑;
+	font-size: 12px;
+	color: #333333;
+	margin-top: 29px;
+	float: left;
+}
+.btn-info{
+	width: 120px;
+	height: 40px;
+	margin-top: 17px;
+	float: right;
+}
+.mtkbm{
+	text-align: center;
+	margin-top: 43px;
+}
+.kuaisu{
+	text-align: center;
+
+}
+.daanniu{
+	background-color: #50bbdb;
+	height: 44px;
+	width: 233px;
+	margin-top: 21px;
+	color: #fff;
+}
+.mtkZhong1{
+	margin-top: 33px;
+}
+.ddl{
+	width: 353px;
+	height: 50px;
+	margin-top: 15px;
+	background-color: #50bbdb;
+	font-family: 微软雅黑;
+	font-size: 24px;
+	color: #ffffff;
+}
+.wjmm{
+	margin: 0 auto;
+	height: 56px;
+	width: 355px;
+	line-height: 56px;
+}
+.wjmm a{
+	font-family: 微软雅黑;
+	font-size: 14px;
+	color: #50bbdb;
+}
+.wjmm span{
+	font-family: 微软雅黑;
+	font-size: 14px;
+	color: #333333;
+	margin-left: 150px;
+}
+.qt{
+	width: 355px;
+	margin: 0 auto;
+}
+.qt img{
+	margin-top: 23px;
+}
+.bigzj{
+	text-align: center;
+	padding-bottom: 37px;
+}
+.zjbm{
+	background-color: #50bbdb;
+	width: 233px;
+	height: 44px;
+	font-family: 微软雅黑;
+	font-size: 18px;
+	color: #ffffff;
+	margin-top: 21px;
+}
+.srzq1{
+	display: none;
+	width: 80px;
+	height: 55px;
+	position: absolute;
+	left: 485px;
+	top: 165px;
+	font-family: 微软雅黑;
+	font-size: 16px;
+	color: #50bbdb;
+}
+.srcw1{
+	display: none;
+	width: 80px;
+	height: 55px;
+	position: absolute;
+	left: 485px;
+	top: 165px;
+	font-family: 微软雅黑;
+	font-size: 16px;
+	color: #f00;
+}
+.srzq2{
+	display: none;
+	width: 80px;
+	height: 55px;
+	position: absolute;
+	left: 485px;
+	top: 232px;
+	font-family: 微软雅黑;
+	font-size: 16px;
+	color: #50bbdb;
+}
+.srcw2{
+	display: none;
+	width: 80px;
+	height: 55px;
+	position: absolute;
+	left: 485px;
+	top: 232px;
+	font-family: 微软雅黑;
+	font-size: 16px;
+	color: #f00;
+}

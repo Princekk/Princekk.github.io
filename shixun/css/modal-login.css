@@ -1,0 +1,108 @@
+.modal-content{
+	width: 500px;
+}
+.close{
+	font-size: 40px;
+	padding-right: 10px;
+}
+.login-header{
+	width: 500px;
+	height: 128px;
+}
+.login-pic{
+	text-align: center;
+	line-height: 128px;
+}
+.login-container{
+	width: 500px;
+	height:315px;
+	margin: 0 auto;
+}
+.login-content1{
+	height: 215px;
+}
+.con1{
+	width: 350px;
+	height: 70px;
+	margin: 0 auto;
+}
+.con1 .login-txt{
+	height: 50px;
+	width:350px;
+}
+.con1 .login-txt1{
+	height: 50px;
+	width:350px;
+}
+.con2{
+	height: 75px;
+	width: 350px;
+	margin: 0 auto;
+}
+.con2 .login-btn{
+	height: 50px;
+	width:350px;
+	/*margin-left: 70px;*/
+	background-color:#50bbdb;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 24px;
+	font-family:Adobe Heiti Std;
+}
+.login-content2{
+	height: 100px;
+}
+.login-content2 .con3{
+	height:55px;
+	width: 350px;
+	margin: 0 auto;
+}
+.con3 p{
+	font-family:Microsoft YaHei;
+	font-size: 14px;
+	color:#50bbdb;
+}
+.con3 .login-password{
+	float: left;
+}
+.con3 .login-up{
+	float: right;
+}
+.con3 .login-up span{
+	color: #000;
+}
+.login-content2 .con4{
+	height:45px;
+	width: 350px;
+	margin: 0 auto;
+}
+.con4_1{
+	width:130px;
+	float: left;
+	margin-top: 10px;
+	line-height: 45px;
+	border-bottom: 1px solid #50bbdb;
+}
+.con4_2{
+	float: left;
+}
+.con4_2 p{
+	font-family:Microsoft YaHei;
+	font-size: 14px;
+	color:#999999;
+}
+.login-footer{
+	height:80px;
+	width: 500px;
+	margin: 0 auto;
+}
+.login-footer .login-btn2{
+	height: 50px;
+	width:230px;
+	margin-left: 130px;
+	background-color:#50bbdb;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 18px;
+	font-family:Adobe Heiti Std;
+}

@@ -1,0 +1,73 @@
+body{
+	font-family: "微软雅黑";
+	margin: 0;
+}
+#calendar {
+	width: 504px;
+	height: 327px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.fc-toolbar{
+	margin-bottom: 0;
+	height: 30px;
+	background-color: #eaeaea;
+}
+.fc-toolbar button{
+	height: 30px;
+	background-color: #eaeaea;
+	border:none;
+	outline: none;
+}
+.fc-day-header{
+	height: 23px;
+	background-color: #7f888f;
+	color:#fff;
+	line-height: 23px;
+}
+.fc-day-header.fc-sun,.fc-day-header.fc-sat{
+	background-color: #50bbdb;
+}
+.fc-day-number{
+	font-size: 14px;
+	padding-bottom:0 !important;
+	padding-left: 5px !important;
+}
+.fc-day-grid-container{
+	height: auto !important;
+}
+.fc-widget-content{
+	height: 45px !important;
+}
+.fc-today{
+	color:#ee781a;
+}
+.fc-event{
+	border:none;
+	background-color:transparent;
+	color: #ee781a;
+	border-radius: 0;
+	font-size: 8px !important;
+	padding-top: 6px;
+}
+.fc-event:hover{
+	color:#ee781a;
+}
+.fc{
+	text-align: center;
+}
+.fc-time{
+	display: none;
+}
+.jian-logo{
+	float: right;
+	margin-top: 2px;
+	margin-right: 2px;
+}   /*减3*/
+.time-atonce{
+	color: #b6b6b6;
+	font-size: 8px;
+	position: absolute;
+	top: 14px;
+	left: 24px;
+}

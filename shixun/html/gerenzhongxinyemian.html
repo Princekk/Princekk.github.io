@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人中心页面</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/gerenzhongxinyemian.css">
+	<link href="../css/grey.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/dianpingkuang.css">
+	<link rel="stylesheet" type="text/css" href="../css/star-rating-svg.css">
+</head>
+<body>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+		<div id="bigbox">
+			<div id="headermeng">
+				<div class="headermeng1">
+					<p>行程点评</p>
+					<img src="../images/meng1-images/modal-m.png" class="close" data-dismiss="modal" aria-label="Close">
+				</div>
+			</div>
+			<div id="containermeng">
+				<div class="containermeng1">
+					<textarea id="shuru"></textarea>
+				</div>
+				<div class="containermeng2">
+					<div class="containermeng21">
+						<div class="containermeng211">
+							<p>行程安排：</p>
+							<input type="radio" name="iCheck" class="one" checked>
+							<label  for="one" class="manyi">满意</label>
+							<input type="radio" name="iCheck" class="one">
+							<label  for="one" class="manyi">不满意</label>
+							<input type="radio" name="iCheck" class="one">
+							<label  for="one" class="manyi">一般</label>
+						</div>
+						<div class="containermeng212">
+							<p>住宿餐食：</p>
+							<input type="radio" name="iCheck_2" class="two" checked>
+							<label  for="two" class="manyi2">满意</label>
+							<input type="radio" name="iCheck_2" class="two">
+							<label  for="two" class="manyi2">不满意</label>
+							<input type="radio" name="iCheck_2" class="two">
+							<label  for="two" class="manyi2">一般</label>
+						</div>
+						<div class="containermeng213">
+							<p>旅行交通：</p>
+							<input type="radio" name="icheck_3" class="three" checked>
+							<label  for="three" class="manyi3">满意</label>
+							<input type="radio" name="icheck_3" class="three">
+							<label  for="three" class="manyi3">不满意</label>
+							<input type="radio" name="icheck_3" class="three">
+							<label  for="three" class="manyi3">一般</label>
+						</div>
+					</div>
+					<div class="containermeng22">
+						<div class="containermeng221">
+							<p>综合评价：</p>
+						</div>
+						<div class="containermeng222">
+							<div class="my-rating"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footermeng">
+				<div class="footermeng1">
+					<div class="footermeng11">
+						<a href=""><img src="../images/meng1-images/shaitu-m.gif"></a>
+					</div>
+					<div class="footermeng12">
+						<a href=""><img src="../images/meng1-images/jia-m.gif"></a>
+						<p>0/5</p>
+					</div>
+				</div>
+				<div class="footermeng2">
+					<a href=""><img src="../images/meng1-images/tiaojiao-m.gif"></a>
+				</div>
+			</div>
+		</div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+	<div id="header">
+		<div class="header1">
+			<div class="header11">
+				<div class="header111">
+					<img  src="../images/meng1-images/4.png">
+					<p class="toubu1">北京</p>
+					<a href="#">切换</a>
+				</div>
+				<div class="dingwei">
+						<div class="top1-dingwei">
+							<ul class="dingwei1">
+								全国:
+							</ul>
+							<ul class="dingwei2">
+								<li>北京</li>
+								<li>天津</li>
+								<li>河北</li>
+								<li>山西</li>
+								<li>内蒙古</li>
+								<li>辽宁</li>
+								<li>吉林</li>
+								<li>黑龙江</li>
+								<li>上海</li>
+								<li>江苏</li>
+								<li>浙江</li>
+								<li>安徽</li>
+								<li>福建</li>
+								<li>江西</li>
+								<li>山东</li>
+								<li>河南</li>
+								<li>湖北</li>
+								<li>湖南</li>
+								<li>广东</li>
+								<li>广西</li>
+								<li>海南</li>
+								<li>重庆</li>
+								<li>四川</li>
+								<li>贵州</li>
+								<li>云南</li>
+								<li>西藏</li>
+								<li>陕西</li>
+								<li>甘肃</li>
+								<li>青海</li>
+								<li>宁夏</li>
+								<li>西藏</li>
+							</ul>
+						</div>
+					</div>
+				<div class="header113">
+					<img src="../images/meng1-images/5.png">
+					<a href="">下载手机APP</a>
+				</div>
+				<div class="header115">
+					<img src="../images/meng1-images/6.jpg">
+				</div>
+				<div class="header116">
+					<p>浮生若梦_JKAy </p>
+					<ul class="yi">
+						<li><a href="">个人主页</a></li>
+						<li><a href="">消息中心</a></li>
+						<li><a href="">注销</a></li>
+					</ul>
+				</div>
+				<div class="header117">
+					<img src="../images/meng1-images/8.gif">
+				</div>
+				<div class="header118">
+					<a href=""><img src="../images/meng1-images/7.jpg"></a>
+				</div>
+			</div>
+		</div>
+		<div class="header2">
+			<div class="header22">
+				<div class="header221">
+					<img src="../images/meng1-images/logo.jpg">
+				</div>
+				<div class="header222">
+					<ul class="yuding">
+						<li><a href="">首页</a>    </li>
+						<li><a href="">目的地</a>    </li>
+						<li><a href="">线路</a>    </li>
+						<li><a href="">定制</a>    </li>
+						<li><a href="">自驾团</a>    </li>
+						<li><a href="">摄影</a>    </li>
+						<li><a href="">互动</a>    </li>
+						<li><a href="">精选</a>    </li>
+						<li><a href="">预定</a>    </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header3">
+			<div class="header31">
+				<img src="../images/meng1-images/girl.jpg">
+			</div>
+			<div class="header32">
+				<div class="header321">
+					<p>浮生若梦_JKAy</p>
+				</div>
+				<div class="header322">
+					<a href=""><img src="../images/meng1-images/9.jpg"></a>
+				</div>
+				<div class="header323">
+					<div class="header3231">
+						 <p class="p1">0</p>
+						<a class="a1" href="">关注</a>
+					</div>
+					<div class="header3233">
+						<img src="../images/meng1-images/10.gif">
+					</div>
+					<div class="header3232">
+						 <p class="p1">0</p>
+						<a class="a1" href="">粉丝</a>
+					</div>
+				</div>
+
+			</div>
+			<div class="header33">
+				<img src="../images/meng1-images/erweima.png">
+				<p>扫一扫，关注我</p>
+			</div>
+			<div class="header34">
+				<a href=""><img src="../images/meng1-images/cam.png"></a>
+				<p><a href="">发布照片</a></p>
+
+			</div>
+			<div class="header35">
+				<a href=""><img src="../images/meng1-images/guanli.png"></a>
+				<p><a href="">管理互动</a></p>
+			</div>
+		</div>
+	</div>
+	<div id="container">
+		<div class="container1">
+			<p>我的订单</p>
+			<ul>
+				<li><a href="">全部订单</a></li>
+				<li><a href="">待出行</a></li>
+				<li><a href="">待支付</a></li>
+				<li><a href="#myModal">待评价</a></li>
+				<li><a href="">已取消</a></li>
+			</ul>
+		</div>
+		<div class="container2">
+			<div class="container21">
+				<div class="container211">
+					<div class="container2111">
+						<select>
+  							<option value ="volvo">按条件</option>
+  							<option value ="saab">按日期</option>
+  							<option value="opel">按地址</option>
+							</select>
+					</div>
+				</div>
+				<div class="container212">
+					<div class="container2121">
+						<input type="text" id="txt">
+					</div>
+				</div>
+				<div class="container213">
+					<div class="container2131">
+						<select>
+							<option value ="volvo">状态</option>
+  							<option value ="volvo">已支付</option>
+  							<option value ="saab">已取消</option>
+  							<option value="opel">待支付</option>
+							</select>
+					</div>
+				</div>
+				<div class="container214">
+					<img src="../images/meng1-images/21.jpg">
+				</div>
+				<div class="container215">
+					<p>至</p>
+				</div>
+				<div class="container216">
+					<div class="container2161">
+						<input type="date" id="txt1">
+					</div>
+				</div>
+				<div class="container217">
+					<img src="../images/meng1-images/21.jpg">
+				</div>
+				<div class="container218">
+					<div class="container2181">
+						<input type="date" id="txt2" value="单号">
+					</div>
+				</div>
+				<div class="container219">
+					<a href=""><img src="../images/meng1-images/20.gif"></a>
+				</div>
+			</div>
+			<div class="container22">
+				<ul>
+					<li class="list2"><a href="">订单信息</a></li>
+					<li class="list">产品类型</li>
+					<li class="list">出游日期</li>
+					<li class="list">订单金额</li>
+					<li class="list">订单状态</li>
+					<li class="list1">操作</li>
+				</ul>
+			</div>
+			<div class="container23">
+				<div class="container231">
+					<p>订单编号：7195351</p>
+				</div>
+				<div class="container232">
+					<p>预订时间：2015-12-29 12:04:00</p>
+				</div>
+			</div>
+			<div class="container24">
+				<div class="container241">
+					<img src="../images/meng1-images/12.jpg">
+				</div>
+				<div class="container242">
+					<p class="p11">[春节]<魅力湘西过大年>
+						</p>
+					<p>湘西年夜饭，北京直飞</p>
+				</div>
+				<div class="container243">
+					<ul>
+						<li>自驾游</li>
+						<li>2016-02-07</li>
+						<li>￥4580</li>
+						<li class="sp"><span>待出行</span></li>
+						<li class="li1">
+							<select>
+							<option value ="volvo">取消</option>
+  							<option value ="volvo">支付</option>
+  							<option value ="saab">完成</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container25">
+				<div class="container251">
+					<p>订单编号：7195351</p>
+				</div>
+				<div class="container252">
+					<p>预订时间：2015-12-25 12:04:00</p>
+				</div>
+			</div>
+			<div class="container26">
+				<div class="container261">
+					<img src="../images/meng1-images/13.jpg">
+				</div>
+				<div class="container262">
+					<p class="p11"><span>[5月]<阿尔山童话世界冰</span><span class="sp1">雪温泉之旅>北京直飞....</span></p>
+				</div>
+				<div class="container263">
+					<ul>
+						<li>自驾游</li>
+						<li>2016-05-07</li>
+						<li>￥4580</li>
+						<li class="sp"><span>待支付</span></li>
+						<li class="li2">
+							<select>
+							<option value ="volvo">支付</option>
+  							<option value ="volvo">取消</option>
+  							<option value ="saab">完成</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container27">
+				<div class="container271">
+					<p>订单编号：7195351</p>
+				</div>
+				<div class="container272">
+					<p>预订时间：2015-12-25 12:04:00</p>
+				</div>
+			</div>
+			<div class="container28">
+				<div class="container281">
+					<img src="../images/meng1-images/14.jpg">
+				</div>
+				<div class="container282">
+					<p class="p11"><span>[4月]<海南海岛环驾8日</span><span class="sp1">自驾之旅>海口直飞....</span></p>
+				</div>
+				<div class="container283">
+					<ul>
+						<li class="zijia">自驾游</li>
+						<li>2016-04-07</li>
+						<li>￥4580</li>
+						<li class="sp"><span>待评价</span></li>
+						<li class="li1">
+							<select>
+							<option value ="volvo">点评</option>
+							<option value ="volvo">支付</option>
+  							<option value ="volvo">取消</option>
+  							<option value ="saab">完成</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container29">
+				<div class="container291">
+					<p>订单编号：7195351</p>
+				</div>
+				<div class="container292">
+					<p>预订时间：2015-12-25 12:04:00</p>
+				</div>
+			</div>
+			<div class="container20">
+				<div class="container201">
+					<img src="../images/meng1-images/15.jpg">
+				</div>
+				<div class="container202">
+					<p class="p11"><span>[5月]<食在广东粤菜美</span><span class="sp1">食6日自驾>北京直飞....</span></p>
+				</div>
+				<div class="container203">
+					<ul>
+						<li>自驾游</li>
+						<li>2016-05-07</li>
+						<li>￥4580</li>
+						<li class="sp"><span>已取消</span></li>
+						<li class="li1">
+							<select>
+							<option value ="volvo">查看</option>
+							<option value ="volvo">支付</option>
+  							<option value ="volvo">取消</option>
+  							<option value ="saab">完成</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container30">
+				<p><a href="">加载更多</a></p>
+			</div>
+		</div>
+		<div class="container3">
+			<p>我的收藏</p>
+			<ul class="kandian">
+				<li>看点</li>
+				<li>停车发呆地</li>
+				<li>高德地图点</li>
+				<li>私享点</li>
+				<li>线路</li>
+				<li>自驾团</li>
+			</ul>
+		</div>
+		<div class="container4">
+			<ul class="kandian1">
+				<li class="block">暂无收藏看点</li>
+				<li class="none">暂无收藏停车发呆地</li>
+				<li class="none">暂无收藏高德地图点</li>
+				<li class="none">暂无收藏私享点</li>
+				<li class="none">暂无收藏线路</li>
+				<li class="none">暂无收藏自驾团</li>
+			</ul>
+			<p class="wode"><a>我的线路</a></p>
+		</div>
+		<div class="container5">
+			<p>暂无线路数据</p>
+			<p class="wode1"><a>我的车队</a></p>
+		</div>
+		<div class="container6">
+			<div class="container61">
+					<img src="../images/meng1-images/16.jpg">
+				<div class="container62">
+					<div class="container621">
+						<p>创建车队</p>
+						<img src="../images/meng1-images/22.png">
+					</div>
+					<div class="container622">
+						<p>我的线路</p>
+						<select>
+							<option value ="volvo">选择线路</option>
+							<option value ="volvo">北京——秦皇岛</option>
+							<option value ="volvo">大连——哈尔滨</option>
+  							<option value ="volvo">上海——深圳</option>
+  							<option value ="saab">中国——韩国</option>
+  							<option value ="saab">拉萨——新疆</option>
+						</select>
+							<input type="button" value="确定">
+					</div>
+					<div class="container623">
+						<p>我的成员</p>
+						<input type="text" placeholder="请输入成员名">
+						<input type="button" value="搜索">
+					</div>
+				</div>
+			</div>
+			<p class="wode"><a>我的照片</a></p>
+			<p class="zhaopian">照片</p>
+		</div>
+		<div class="container7">
+			<div class="container71">
+				<img src="../images/meng1-images/17.jpg">
+				<div class="container711">
+					<div class="container7111">
+						<p>上传照片</p>
+						<img src="../images/meng1-images/23.png">
+					</div>
+					<div class="container7112">
+						<p>上传到</p>
+						<select>
+							<option value ="volvo">我的电脑</option>
+							<option value ="volvo">我的空间</option>
+							<option value ="volvo">我的云盘</option>
+						</select>
+							<input type="button" value="确定">
+					</div>
+				</div>
+			</div>
+			 <div class="container73">
+				<img src="../images/meng1-images/18.jpg">
+				<div class="container731">
+					<div class="container7311">
+						<p>新建相册</p>
+						<img src="../images/meng1-images/22.png">
+					</div>
+					<div class="container7312">
+						<p>相册名称</p>
+						<input type="text" id="txta">
+						<input type="button" value="确定" id="txtb">
+					</div>
+				</div>
+			</div>
+			 <div class="container72">
+				<a href=""><img src="../images/meng1-images/19.jpg"></a>
+				<p>分享专属</p>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footer1">
+			<ul class="footer11">
+				<li><a href="">人民交通出版社</a></li>
+				<li><a href="">爱自驾</a></li>
+				<li><a href="">联系我们</a></li>
+				<li><a href="">友情链接</a></li>
+				<li><a href="">爱自驾品牌店</a></li>
+			</ul>
+		</div>
+		<div class="footer2">
+			<p class="footer21">人民交通出版社股份有限公司</p>
+			<p>京ICP备15018898号-1</p>
+		</div>
+	</div>
+
+
+
+
+
+
+<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="../js/jquery.star-rating-svg.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script src="../js/icheck.js"></script>
+<script type="text/javascript">
+		$(".header116 p").click(function(){
+			$(".yi").css("display","block")
+			$(".yi li a").css("display","block")
+		})
+		$(".header116 p").mouseenter(function(){
+			$(this).css("color","#50bbdb")
+		})
+		$(".header116 p").mouseleave(function(){
+			$(this).css("color","white")
+		})
+
+
+	$(".container61 img").click(function(){
+		$(".container62").show();
+	})
+	$(".container621 img").click(function(){
+		$(".container62").hide();
+	})
+	 $(".container71 img").click(function(){
+	 	$(".container711").show();
+	})
+	 $(".container7111 img").click(function(){
+	 	$(".container711").hide();
+	})
+	  $(".container73 img").click(function(){
+	 	$(".container731").show();
+	})
+	  $(".container7311 img").click(function(){
+	  	$(".container731").hide();
+	})
+	$(".yuding li").mouseenter(
+	 	function(){
+	 	$(this).addClass("active")
+	})
+	$(".yuding li").mouseleave(function(){
+	 	$(this).removeClass("active")
+	})
+	$(".kandian li").click(function(){
+			var index = $(this).index();
+			$(".kandian1 li").eq(index).css("display","block").siblings().css("display","none");
+	})
+	$(".footer11 li a").mouseenter(function(){
+			$(this).css("color","#50bbdb")
+	})
+	$(".footer11 li a").mouseleave(function(){
+			$(this).css("color","white");
+	})
+
+	$(".header118 a img").mouseenter(function(){
+		$(this).attr("src","../images/meng1-images/xianlu.gif");
+			// $(this).attr("src","images
+			// 	/xianlu.gif")
+	})
+	$(".header118 a img").mouseleave(function(){
+		$(this).attr("src","../images/meng1-images/7.jpg");
+	})
+
+	// $(".header118 a img").mouseleave(function(){
+	// 		$(this).attr("src","images
+	// 			/7.jpg")
+	// })
+
+	$(".header113").mouseenter(function(){
+			$(".header113 img").attr("src","../images/meng1-images/phone-blue.png")
+			$(".header113 a").css("color","#50bbdb")
+		})
+		$(".header113").mouseleave(function(){
+			$(".header113 img").attr("src","../images/meng1-images/5.png")
+			$(".header113 a").css("color","white")
+		})
+
+
+
+
+		$(".header111").mouseenter(function(){
+			$(this).find("img").attr("src","../images/meng1-images/live-blue.png");
+			$(this).find("p").css("color","#50bbdb");
+			$(this).find("a").css("color","#50bbdb");
+		}).mouseleave(function(){
+			$(this).find("img").attr("src","../images/meng1-images/4.png");
+			$(this).find("p").css("color","#ffffff");
+			$(this).find("a").css("color","#cecccc");
+		})
+		$(".header111").click(function(){
+			$(".top1-dingwei").css("display","block");
+		});
+		$(".dingwei").click(function(){
+			$(".top1-dingwei").css("display","none");
+		});
+		$(".dingwei2 li").click(function(){
+			var txt = $(this).text();
+			$(".toubu1").text(txt);
+		})
+
+		$(".top1-dingwei .dingwei2 li").mouseenter(function(){
+				$(this).css("background-color","#CEF6F5");
+		}).mouseleave(function(){
+				$(this).css("background-color","#ffffff");
+		})
+
+
+
+		$(".container1 a").click(function(){
+		$('#myModal').modal();
+	})
+	$(".my-rating").starRating({
+    	starSize: 25,
+    	callback: function(currentRating, $el){
+        // make a server call here
+    	}
+	});
+	$(document).ready(function(){
+  		$('input').iCheck({
+    	// checkboxClass: 'icheckbox_minimal-grey',
+    	radioClass: 'iradio_minimal-grey',
+    	increaseArea: '20%' // optional
+  		});
+	});
+</script>
+</body>
+</html>
