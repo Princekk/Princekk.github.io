@@ -233,7 +233,7 @@ html,body{
 		width: 2.97rem;
 		height: 3.98rem;
 		position: absolute;
-		bottom:1.5rem;
+		top:0.8rem;
 		left: 0.15rem;
 		background-image: url(../images/w7-2_08.png);
 		background-size: 100% 100%;
@@ -242,7 +242,7 @@ html,body{
 		width: 4.7rem;
 		height: 3.04rem;
 		position: absolute;
-		bottom:1.2rem;
+		top:1.75rem;
 		left: 1.54rem;
 		background-image: url(../images/w7-3_11.png);
 		background-size: 100% 100%;
@@ -251,7 +251,7 @@ html,body{
 		width: 100%;
 		height: 0.93rem;
 		position: absolute;
-		bottom:0.9rem;
+		bottom:4.05rem;
 		left:0;
 		background-image: url(../images/w7-4_14.png);
 		background-size: 100% 100%;
@@ -260,7 +260,7 @@ html,body{
 		width: 100%;
 		height: 0.88rem;
 		position: absolute;
-		bottom:0.65rem;
+		bottom:2.46rem;
 		left: 0;
 		background-image: url(../images/w7-5_18.png);
 		background-size: 100% 100%;
@@ -269,7 +269,7 @@ html,body{
 		width: 100%;
 		height: 0.56rem;
 		position: absolute;
-		bottom:0.35rem;
+		bottom:1.65rem;
 		left: 0;
 		background-image: url(../images/w7-6_20.png);
 		background-size: 100% 100%;
@@ -278,7 +278,7 @@ html,body{
 		width: 100%;
 		height: 0.55rem;
 		position: absolute;
-		bottom:0.2rem;
+		bottom:0.6rem;
 		left: 0;
 		background-image: url(../images/w7-7_21.jpg);
 		background-size: 100% 100%;
