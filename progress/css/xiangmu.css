@@ -7,6 +7,10 @@ html,body{
 	html{
 		font-size: 100px;
 	}
+	html,body,div,img,p,a{
+		margin:0;
+		padding:0;
+	}
 	.swiper-container{
 		height: 100%;
 		overflow: hidden;
@@ -247,7 +251,7 @@ html,body{
 		width: 100%;
 		height: 0.93rem;
 		position: absolute;
-		top:5.4rem;
+		bottom:3.5rem;
 		left:0;
 		background-image: url(../images/w7-4_14.png);
 		background-size: 100% 100%;
@@ -256,7 +260,7 @@ html,body{
 		width: 100%;
 		height: 0.88rem;
 		position: absolute;
-		top:6.7rem;
+		bottom:2.46rem;
 		left: 0;
 		background-image: url(../images/w7-5_18.png);
 		background-size: 100% 100%;
@@ -265,7 +269,7 @@ html,body{
 		width: 100%;
 		height: 0.56rem;
 		position: absolute;
-		top:7.9rem;
+		bottom:1.65rem;
 		left: 0;
 		background-image: url(../images/w7-6_20.png);
 		background-size: 100% 100%;
@@ -274,7 +278,7 @@ html,body{
 		width: 100%;
 		height: 0.55rem;
 		position: absolute;
-		top:8.92rem;
+		bottom:0.6rem;
 		left: 0;
 		background-image: url(../images/w7-7_21.jpg);
 		background-size: 100% 100%;
