@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+	<div class="box" id="box">
+		<div class="page page1">
+			<img src="images/head1.jpg" alt="">
+			<p>Hello,I'm <span>WangJikun</span></p>
+			<span>Welcome to my Website</span>
+		</div>
+		<div class="page page2 pageDown">
+			<h2>个人介绍</h2>
+			<div>			
+				<p>姓名：</p><p>王继坤</p>
+				<p>性别：</p><p>男</p>
+				<p>专业：</p><p>通信工程</p>
+				<p>爱好：</p><p>玩益智游戏</p>
+				<p>特长：</p><p>下棋</p>
+			</div>
+		</div>
+		<div class="page page3 pageDown">
+			<h2>说明</h2>
+			<p>此 demo 为移动端单页切换应用，利用 zepto 库识别手机touch等事件。编写了一些 css3 动画实例，还有音乐控制事件。</p>
+			<h2>个人说明</h2>
+			<p> 性格随和，有团队合作和进取精神，能承受一定压力，善于学习能不断提高自身的能力与综合素质。</p>
+		</div>
+		<div class="page page4 pageDown">
+			<h1>技能简介</h1>
+			<p>精通HTML5+CSS3，DIV+CSS<br>精通JS及Jquery框架，zepto框架, Bootstrap框架，Ajax,熟悉交互效果。<br>掌握响应式设计，能够开发移动端页面，熟练使用swiper库，栅格系统等。<br>能解决各种主流浏览器兼容性问题以及移动端手机分辨率的适配，兼容各种型号手机浏览器。<br>了解node.js,angular.js，sea.js等框架，对grunt,gulp及前端自动化有一定的了解。</p>
+		</div>
+		<div class="page page5 pageDown">
+			<h1>Thanks</h1>
+			<h2>The End</h2>
+		</div>
+	</div>
+	
+	<img src="images/arrow.png" class="arrow">
+	<img src="images/music.png" class="music play">
+	<audio autoplay="true">
+		<source src="images/demo.mp3" type="audio/mpeg">
+	</audio>
+
+	<script src="js/zepto.js"></script>
+	<script src="js/touch.js"></script>
+	<script>
+		$(document).ready(function () {
+			//音乐控制部分
+			var audio = document.getElementsByTagName("audio")[0];
+		  $('.music').tap(function() {
+        if (audio.paused) {
+          audio.play();
+          $(this).addClass('play');
+        } else {
+          audio.pause();
+          $(this).removeClass('play');
+        };
+      })  
+	    audio.addEventListener('ended', function () {
+        $('.music').removeClass('play');
+	    }, false);
+			
+			//翻页效果
+			var nodes = $('.box').children('.page').length;
+			var num = 0;
+			$('.page').swipeUp(function () {
+				// console.log($(this).index())
+				removeAnimated(num);
+				num ++;
+				if (num < nodes) {
+					$(this).addClass('pageUp');
+					$('.page').eq(num).removeClass('pageDown');
+					animated(num);
+				}else{
+					num = 0;
+					$('.page').eq(num).removeClass('pageUp');
+					$('.page').eq(num).siblings().removeClass('pageUp').addClass('pageDown');
+					animated(num);
+				}
+			});
+
+			$('.page').swipeDown(function () {
+				removeAnimated(num);
+				num --;
+				if (num < 0) {
+					return num = 0;
+				}else{
+					$(this).addClass('pageDown');
+					$('.page').eq(num).removeClass('pageUp');
+					animated(num);
+				}
+			})
+			
+			//页面内部内容动画效果
+			var types = ['rollIn','zoomInRight','zoomInLeft','zoomIn','lightSpeedIn','fadeInLeft','fadeInRight','bounce','flash','pulse','rubberBand','shake','swing','tada'];
+				typeLength = types.length;
+			function animated(selector) {
+				classNum = Math.floor(Math.random()*typeLength);
+				className = 'animated ' + types[classNum];
+				var childDom = $('.page').eq(selector).children();
+				var childLength = childDom.length;
+
+				for (var i = 0; i < childLength; i++) {
+
+					var timeLength = Number(500+(i*300));
+					// console.log(timeLength);
+					$(childDom[i]).css('display', 'none');
+					var t = setTimeout(addPlay,timeLength);
+				}
+				
+				var y = 0;
+				function addPlay() {
+					var _this = $(childDom[y]);
+					// var domThis = _this[0];
+					// domThis.addEventListener('webkitAnimationEnd',function () {
+						// _this.removeClass(className);
+						// domThis.removeEventListener('webkitAnimationEnd');
+					// },false);
+					_this.css('display', 'block').addClass(className);
+					y++;
+				};
+			};
+
+			function removeAnimated(select) {
+				var childDom = $('.page').eq(select).children();
+				var childLength = childDom.length;
+				for (var i = 0; i < childLength; i++) {
+					$(childDom[i]).removeClass(className);
+				}
+			};
+
+			animated(0);
+		})
+	</script>
+</body>
+</html>
